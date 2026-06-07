@@ -581,33 +581,35 @@ footer{
     }
 }
 /* =====================================
-CONTACT SCRAPBOOK DESIGN
+   CONTACT SECTION
 ===================================== */
 
 .contact-container{
     display:flex;
-    gap:50px;
-    align-items:flex-start;
     justify-content:center;
-    max-width:1200px;
-    margin:auto;
+    align-items:flex-start;
+    gap:25px;
+    max-width:900px;
+    margin:50px auto;
 }
 
-/* LEFT NOTE */
+/* LEFT STICKY NOTE */
 
 .sticky-contact{
 
-    width:360px;
+    width:260px;
 
-    background:#fff5bf;
+    background:#fff4b5;
 
-    padding:30px;
+    padding:20px;
 
-    border-radius:25px;
+    border-radius:20px;
 
     position:relative;
 
-    box-shadow:0 15px 30px rgba(0,0,0,.12);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transform:rotate(-2deg);
 }
 
 .tape{
@@ -615,42 +617,20 @@ CONTACT SCRAPBOOK DESIGN
     position:absolute;
 
     top:-12px;
-    left:25px;
+    left:30px;
 
-    width:120px;
-    height:35px;
+    width:100px;
+    height:28px;
 
     background:#f9a8d4;
 
     transform:rotate(-10deg);
 }
 
-.star{
-
-    position:absolute;
-
-    top:-20px;
-    right:20px;
-
-    font-size:40px;
-}
-
-.heart{
-
-    position:absolute;
-
-    right:25px;
-    top:180px;
-
-    font-size:45px;
-
-    transform:rotate(-15deg);
-}
-
 .passport-photo{
 
-    width:160px;
-    height:160px;
+    width:110px;
+    height:110px;
 
     border-radius:50%;
 
@@ -660,7 +640,7 @@ CONTACT SCRAPBOOK DESIGN
 
     margin:20px auto;
 
-    border:8px solid white;
+    border:6px solid white;
 
     box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
@@ -669,30 +649,18 @@ CONTACT SCRAPBOOK DESIGN
 
     text-align:center;
 
-    font-size:38px;
+    font-size:24px;
 
-    margin-bottom:10px;
+    margin-bottom:15px;
 
-    font-family:cursive;
-}
-
-.pink-line{
-
-    width:180px;
-    height:4px;
-
-    background:#f472b6;
-
-    margin:0 auto 25px;
-
-    border-radius:20px;
+    color:#0f172a;
 }
 
 .contact-detail{
 
-    padding:15px 0;
+    padding:10px 0;
 
-    border-bottom:1px dashed #d6d3d1;
+    border-bottom:1px dashed #d4d4d4;
 }
 
 .contact-detail:last-child{
@@ -702,34 +670,42 @@ CONTACT SCRAPBOOK DESIGN
 
 .contact-detail strong{
 
-    color:#1e3a8a;
+    display:block;
 
-    font-size:17px;
+    color:#2563eb;
+
+    font-size:14px;
+
+    margin-bottom:4px;
 }
 
 .contact-detail p{
 
-    margin-top:5px;
+    font-size:13px;
 
-    color:#111827;
+    color:#334155;
 }
 
-/* RIGHT NOTEBOOK */
+/* RIGHT FORM */
 
 .contact-right{
 
     flex:1;
 
+    max-width:550px;
+
     background:white;
 
-    padding:45px;
+    padding:25px;
 
-    border-radius:15px;
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 
     position:relative;
-
-    box-shadow:0 15px 30px rgba(0,0,0,.08);
 }
+
+/* NOTEBOOK HOLES */
 
 .contact-right::before{
 
@@ -741,35 +717,23 @@ CONTACT SCRAPBOOK DESIGN
     left:0;
     right:0;
 
-    height:25px;
+    height:24px;
 
     background:
-    radial-gradient(circle,#d1d5db 7px,transparent 8px);
+    radial-gradient(circle,#d4d4d4 6px,transparent 7px);
 
-    background-size:50px 25px;
-}
-
-.paperclip{
-
-    position:absolute;
-
-    top:-25px;
-    right:15px;
-
-    font-size:45px;
+    background-size:45px 24px;
 }
 
 .contact-right h2{
 
     text-align:center;
 
-    font-size:42px;
+    font-size:28px;
 
-    margin-bottom:15px;
+    margin-bottom:10px;
 
-    font-family:cursive;
-
-    color:#1e3a8a;
+    color:#0f172a;
 }
 
 .contact-right p{
@@ -778,16 +742,18 @@ CONTACT SCRAPBOOK DESIGN
 
     color:#64748b;
 
-    margin-bottom:30px;
+    margin-bottom:20px;
+
+    font-size:14px;
 }
 
-.row{
+.contact-right form{
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:1fr 1fr;
+    flex-direction:column;
 
-    gap:20px;
+    gap:12px;
 }
 
 .contact-right input,
@@ -795,22 +761,30 @@ CONTACT SCRAPBOOK DESIGN
 
     width:100%;
 
-    padding:16px;
+    padding:12px;
 
     border:2px solid #e5e7eb;
 
-    border-radius:15px;
+    border-radius:12px;
 
-    font-size:15px;
-
-    margin-bottom:18px;
+    font-size:14px;
 
     font-family:'Poppins',sans-serif;
+
+    transition:0.3s;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
 }
 
 .contact-right textarea{
 
-    height:180px;
+    height:120px;
 
     resize:none;
 }
@@ -819,23 +793,23 @@ CONTACT SCRAPBOOK DESIGN
 
     width:100%;
 
-    padding:16px;
-
-    border:none;
-
-    border-radius:15px;
+    padding:12px;
 
     background:#2563eb;
 
     color:white;
 
-    font-size:17px;
+    border:none;
+
+    border-radius:12px;
+
+    font-size:15px;
 
     font-weight:600;
 
     cursor:pointer;
 
-    transition:.3s;
+    transition:0.3s;
 }
 
 .contact-right button:hover{
@@ -845,21 +819,34 @@ CONTACT SCRAPBOOK DESIGN
     transform:translateY(-3px);
 }
 
+/* MOBILE */
+
 @media(max-width:768px){
 
 .contact-container{
 
     flex-direction:column;
+
+    align-items:center;
 }
 
 .sticky-contact{
 
     width:100%;
+
+    max-width:320px;
+
+    transform:none;
 }
 
-.row{
+.contact-right{
 
-    grid-template-columns:1fr;
+    width:100%;
+}
+
+.contact-right h2{
+
+    font-size:24px;
 }
 
 }
