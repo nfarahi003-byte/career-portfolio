@@ -584,20 +584,47 @@ footer{
    CONTACT SECTION
 ===================================== */
 
+/* CONTACT */
+
 .contact-container{
-
-display:grid;
-
-grid-template-columns:320px 1fr;
-
-gap:50px;
-
-max-width:1200px;
-
-margin:auto;
-
-align-items:start;
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
 }
+
+.sticky-contact{
+    width:300px;
+    background:#fff3b0;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transform:rotate(-2deg);
+}
+
+.passport-photo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 20px;
+    border:4px solid white;
+}
+
+.contact-detail{
+    margin-bottom:15px;
+}
+
+.contact-detail strong{
+    color:#2563eb;
+}
+
+.contact-right{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow
 
 /* STICKY NOTE */
 
