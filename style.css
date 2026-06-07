@@ -584,138 +584,93 @@ footer{
    CONTACT NEW
 =========================== */
 
-.contact-container{
+/* ==========================
+   STICKY CONTACT CARD
+========================== */
 
-display:grid;
+.sticky-contact{
 
-grid-template-columns:1fr 1fr;
+position:relative;
 
-gap:50px;
-
-align-items:start;
-}
-
-.contact-left h2{
-
-font-size:42px;
-
-margin-bottom:15px;
-}
-
-.contact-left p{
-
-color:#64748b;
-
-margin-bottom:30px;
-}
-
-.contact-info{
-
-background:white;
-
-padding:30px;
-
-border-radius:25px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.contact-item{
-
-padding:15px 0;
-
-border-bottom:1px solid #e5e7eb;
-}
-
-.contact-item:last-child{
-
-border-bottom:none;
-}
-
-.contact-item strong{
-
-display:block;
-
-margin-bottom:8px;
-
-color:#2563eb;
-}
-
-.contact-right{
-
-background:white;
+background:#fff3b0;
 
 padding:35px;
 
-border-radius:25px;
+border-radius:10px;
 
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+box-shadow:0 15px 25px rgba(0,0,0,.15);
+
+max-width:450px;
+
+margin:auto;
+
+transform:rotate(-1deg);
 }
 
-.contact-right form{
+.tape{
 
-display:flex;
+position:absolute;
 
-flex-direction:column;
+top:-15px;
 
-gap:20px;
+left:50%;
+
+transform:translateX(-50%) rotate(-5deg);
+
+width:120px;
+height:30px;
+
+background:#fbcfe8;
+
+opacity:.9;
 }
 
-.contact-right input,
-.contact-right textarea{
+.passport-photo{
 
-width:100%;
+display:block;
 
-padding:15px;
+margin:auto;
 
-border:2px solid #e5e7eb;
+width:180px;
+height:220px;
 
-border-radius:15px;
+object-fit:cover;
 
-font-size:15px;
+background:white;
 
-font-family:'Poppins',sans-serif;
+padding:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+margin-bottom:25px;
 }
 
-.contact-right input:focus,
-.contact-right textarea:focus{
+.sticky-contact h2{
 
-outline:none;
+text-align:center;
 
-border-color:#2563eb;
+margin-bottom:25px;
+
+font-size:36px;
 }
 
-.contact-right button{
+.contact-detail{
 
-background:#2563eb;
+padding:15px 0;
 
-color:white;
+border-bottom:1px dashed rgba(0,0,0,.2);
+}
 
-padding:15px;
+.contact-detail:last-child{
 
 border:none;
-
-border-radius:15px;
-
-font-size:16px;
-
-cursor:pointer;
-
-transition:.3s;
 }
 
-.contact-right button:hover{
+.contact-detail strong{
 
-background:#1d4ed8;
+display:block;
 
-transform:translateY(-3px);
-}
+margin-bottom:5px;
 
-@media(max-width:768px){
-
-.contact-container{
-
-grid-template-columns:1fr;
-}
-
+color:#2563eb;
 }
