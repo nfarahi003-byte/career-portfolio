@@ -425,35 +425,40 @@
         <span>CONTACT ME</span>
     </div>
 
-    <div class="scrap-contact">
+    <div class="contact-container">
 
-        <!-- LEFT PAPER -->
+        <!-- LEFT NOTE -->
 
-        <div class="contact-note">
+        <div class="sticky-contact">
 
-            <div class="pink-tape"></div>
+            <div class="tape"></div>
 
-            <img src="images/profile.jpg" class="profile-circle">
+            <div class="star">⭐</div>
+            <div class="heart">♡</div>
+
+            <img src="images/profile.jpg" alt="Profile" class="passport-photo">
 
             <h2>My Contact</h2>
 
-            <div class="contact-line">
-                <span>👤 Name</span>
+            <div class="pink-line"></div>
+
+            <div class="contact-detail">
+                <strong>👤 Name</strong>
                 <p>Nurul Farahi Binti Yahaya</p>
             </div>
 
-            <div class="contact-line">
-                <span>📞 Phone</span>
+            <div class="contact-detail">
+                <strong>📱 Phone</strong>
                 <p>011-XXXXXXX</p>
             </div>
 
-            <div class="contact-line">
-                <span>📧 Email</span>
+            <div class="contact-detail">
+                <strong>📧 Email</strong>
                 <p>nfarahi003@gmail.com</p>
             </div>
 
-            <div class="contact-line">
-                <span>📍 Location</span>
+            <div class="contact-detail">
+                <strong>📍 Location</strong>
                 <p>Terengganu, Malaysia</p>
             </div>
 
@@ -461,31 +466,44 @@
 
         <!-- RIGHT NOTEBOOK -->
 
-        <div class="contact-notebook">
+        <div class="contact-right">
 
-            <h2>Send Me a Message</h2>
+            <div class="paperclip">📎</div>
+
+            <h2>Send Me A Message</h2>
 
             <p>
-                Feel free to contact me for collaboration,
-                internship opportunities or inquiries.
+                Feel free to contact me for internship,
+                collaboration or future opportunities.
             </p>
 
-            <form>
+            <form action="https://formsubmit.co/nfarahi003@gmail.com" method="POST">
 
                 <div class="row">
 
-                    <input type="text" placeholder="Your Name">
+                    <input type="text"
+                    name="name"
+                    placeholder="👤 Your Name"
+                    required>
 
-                    <input type="email" placeholder="Your Email">
+                    <input type="email"
+                    name="email"
+                    placeholder="✉️ Your Email"
+                    required>
 
                 </div>
 
-                <input type="text" placeholder="Company Name (Optional)">
+                <input type="text"
+                name="company"
+                placeholder="🏢 Company Name (Optional)">
 
-                <textarea placeholder="Write your message..."></textarea>
+                <textarea
+                name="message"
+                placeholder="✏️ Write your message..."
+                required></textarea>
 
                 <button type="submit">
-                    ✈ Send Message
+                    ✈️ Send Message
                 </button>
 
             </form>
