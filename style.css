@@ -584,13 +584,18 @@ footer{
    CONTACT SECTION
 ===================================== */
 
-/* CONTACT */
+/* =====================================
+   CONTACT SECTION
+===================================== */
 
 .contact-container{
     display:flex;
     gap:40px;
     align-items:flex-start;
+    margin-top:40px;
 }
+
+/* LEFT CARD */
 
 .sticky-contact{
     width:300px;
@@ -599,224 +604,139 @@ footer{
     border-radius:15px;
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
     transform:rotate(-2deg);
+    position:relative;
+}
+
+.tape{
+    position:absolute;
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%) rotate(-8deg);
+
+    width:120px;
+    height:30px;
+
+    background:#f9a8d4;
 }
 
 .passport-photo{
     width:120px;
-    height:120px;
-    border-radius:50%;
+    height:150px;
+
     object-fit:cover;
+
     display:block;
+
     margin:0 auto 20px;
-    border:4px solid white;
-}
 
-.contact-detail{
-    margin-bottom:15px;
-}
-
-.contact-detail strong{
-    color:#2563eb;
-}
-
-.contact-right{
-    flex:1;
     background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow
+    padding:8px;
 
-/* STICKY NOTE */
-
-.sticky-contact{
-
-position:relative;
-
-background:#fff3b0;
-
-padding:25px;
-
-border-radius:12px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.15);
-
-transform:rotate(-2deg);
-}
-
-.tape{
-
-position:absolute;
-
-top:-15px;
-
-left:50%;
-
-transform:translateX(-50%) rotate(-8deg);
-
-width:120px;
-height:30px;
-
-background:#f9a8d4;
-}
-
-.passport-photo{
-
-display:block;
-
-margin:auto;
-
-width:120px;
-height:150px;
-
-object-fit:cover;
-
-background:white;
-
-padding:8px;
-
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-
-margin-bottom:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
 }
 
 .sticky-contact h2{
-
-text-align:center;
-
-font-size:28px;
-
-margin-bottom:20px;
+    text-align:center;
+    margin-bottom:20px;
 }
 
 .contact-detail{
-
-padding:12px 0;
-
-border-bottom:1px dashed rgba(0,0,0,.15);
+    padding:10px 0;
+    border-bottom:1px dashed rgba(0,0,0,0.2);
 }
 
 .contact-detail:last-child{
-
-border-bottom:none;
+    border-bottom:none;
 }
 
 .contact-detail strong{
-
-display:block;
-
-color:#2563eb;
-
-margin-bottom:5px;
+    display:block;
+    color:#2563eb;
+    margin-bottom:5px;
 }
 
 .contact-detail p{
-
-font-size:14px;
+    font-size:14px;
 }
 
-/* FORM CARD */
+/* RIGHT FORM */
 
 .contact-right{
+    flex:1;
 
-background:white;
+    background:white;
 
-padding:35px;
+    padding:35px;
 
-border-radius:25px;
+    border-radius:25px;
 
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 .contact-right h2{
-
-font-size:42px;
-
-margin-bottom:10px;
+    margin-bottom:10px;
 }
 
 .contact-right p{
-
-color:#64748b;
-
-margin-bottom:25px;
+    color:#64748b;
+    margin-bottom:20px;
 }
 
 .contact-right form{
-
-display:flex;
-
-flex-direction:column;
-
-gap:15px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
 
 .contact-right input,
 .contact-right textarea{
+    width:100%;
 
-width:100%;
+    padding:15px;
 
-padding:16px;
+    border:2px solid #e5e7eb;
 
-border:2px solid #e5e7eb;
+    border-radius:15px;
 
-border-radius:15px;
-
-font-size:15px;
-
-font-family:'Poppins',sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 .contact-right input:focus,
 .contact-right textarea:focus{
-
-outline:none;
-
-border-color:#2563eb;
+    outline:none;
+    border-color:#2563eb;
 }
 
 .contact-right button{
+    background:#2563eb;
+    color:white;
 
-background:#2563eb;
+    border:none;
 
-color:white;
+    padding:15px;
 
-border:none;
+    border-radius:15px;
 
-padding:16px;
+    cursor:pointer;
 
-border-radius:15px;
-
-font-size:16px;
-
-font-weight:600;
-
-cursor:pointer;
+    font-size:16px;
 }
 
 .contact-right button:hover{
-
-background:#1d4ed8;
+    background:#1d4ed8;
 }
 
 /* MOBILE */
 
 @media(max-width:768px){
 
-.contact-container{
+    .contact-container{
+        flex-direction:column;
+    }
 
-grid-template-columns:1fr;
-}
-
-.sticky-contact{
-
-width:100%;
-
-transform:none;
-}
-
-.contact-right h2{
-
-font-size:30px;
-}
+    .sticky-contact{
+        width:100%;
+        transform:none;
+    }
 
 }
