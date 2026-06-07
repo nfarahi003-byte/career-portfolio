@@ -581,37 +581,33 @@ footer{
     }
 }
 /* =====================================
-   CONTACT SECTION
+CONTACT SCRAPBOOK DESIGN
 ===================================== */
 
 .contact-container{
     display:flex;
-    justify-content:center;
+    gap:50px;
     align-items:flex-start;
-    gap:30px;
-    max-width:1000px;
-    margin:50px auto;
+    justify-content:center;
+    max-width:1200px;
+    margin:auto;
 }
 
-/* ===================
-   LEFT STICKY NOTE
-=================== */
+/* LEFT NOTE */
 
 .sticky-contact{
 
-    width:300px;
+    width:360px;
 
-    background:#fff4b5;
+    background:#fff5bf;
 
-    padding:25px;
+    padding:30px;
 
-    border-radius:20px;
+    border-radius:25px;
 
     position:relative;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
-
-    transform:rotate(-2deg);
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
 }
 
 .tape{
@@ -619,20 +615,42 @@ footer{
     position:absolute;
 
     top:-12px;
-    left:30px;
+    left:25px;
 
-    width:100px;
-    height:28px;
+    width:120px;
+    height:35px;
 
     background:#f9a8d4;
 
     transform:rotate(-10deg);
 }
 
+.star{
+
+    position:absolute;
+
+    top:-20px;
+    right:20px;
+
+    font-size:40px;
+}
+
+.heart{
+
+    position:absolute;
+
+    right:25px;
+    top:180px;
+
+    font-size:45px;
+
+    transform:rotate(-15deg);
+}
+
 .passport-photo{
 
-    width:130px;
-    height:130px;
+    width:160px;
+    height:160px;
 
     border-radius:50%;
 
@@ -642,7 +660,7 @@ footer{
 
     margin:20px auto;
 
-    border:6px solid white;
+    border:8px solid white;
 
     box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
@@ -651,18 +669,30 @@ footer{
 
     text-align:center;
 
-    font-size:30px;
+    font-size:38px;
 
-    margin-bottom:20px;
+    margin-bottom:10px;
 
-    color:#0f172a;
+    font-family:cursive;
+}
+
+.pink-line{
+
+    width:180px;
+    height:4px;
+
+    background:#f472b6;
+
+    margin:0 auto 25px;
+
+    border-radius:20px;
 }
 
 .contact-detail{
 
-    padding:12px 0;
+    padding:15px 0;
 
-    border-bottom:1px dashed #d4d4d4;
+    border-bottom:1px dashed #d6d3d1;
 }
 
 .contact-detail:last-child{
@@ -672,44 +702,34 @@ footer{
 
 .contact-detail strong{
 
-    display:block;
+    color:#1e3a8a;
 
-    color:#2563eb;
-
-    font-size:16px;
-
-    margin-bottom:4px;
+    font-size:17px;
 }
 
 .contact-detail p{
 
-    font-size:15px;
+    margin-top:5px;
 
-    color:#334155;
+    color:#111827;
 }
 
-/* ===================
-   RIGHT FORM
-=================== */
+/* RIGHT NOTEBOOK */
 
 .contact-right{
 
     flex:1;
 
-    max-width:650px;
-
     background:white;
 
-    padding:30px;
+    padding:45px;
 
-    border-radius:20px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    border-radius:15px;
 
     position:relative;
-}
 
-/* notebook holes */
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
 
 .contact-right::before{
 
@@ -721,23 +741,35 @@ footer{
     left:0;
     right:0;
 
-    height:24px;
+    height:25px;
 
     background:
-    radial-gradient(circle,#d4d4d4 6px,transparent 7px);
+    radial-gradient(circle,#d1d5db 7px,transparent 8px);
 
-    background-size:45px 24px;
+    background-size:50px 25px;
+}
+
+.paperclip{
+
+    position:absolute;
+
+    top:-25px;
+    right:15px;
+
+    font-size:45px;
 }
 
 .contact-right h2{
 
     text-align:center;
 
-    font-size:34px;
+    font-size:42px;
 
-    margin-bottom:10px;
+    margin-bottom:15px;
 
-    color:#0f172a;
+    font-family:cursive;
+
+    color:#1e3a8a;
 }
 
 .contact-right p{
@@ -746,18 +778,16 @@ footer{
 
     color:#64748b;
 
-    margin-bottom:25px;
-
-    font-size:15px;
+    margin-bottom:30px;
 }
 
-.contact-right form{
+.row{
 
-    display:flex;
+    display:grid;
 
-    flex-direction:column;
+    grid-template-columns:1fr 1fr;
 
-    gap:15px;
+    gap:20px;
 }
 
 .contact-right input,
@@ -765,30 +795,22 @@ footer{
 
     width:100%;
 
-    padding:15px;
+    padding:16px;
 
     border:2px solid #e5e7eb;
 
-    border-radius:12px;
+    border-radius:15px;
 
     font-size:15px;
 
+    margin-bottom:18px;
+
     font-family:'Poppins',sans-serif;
-
-    transition:0.3s;
-}
-
-.contact-right input:focus,
-.contact-right textarea:focus{
-
-    outline:none;
-
-    border-color:#2563eb;
 }
 
 .contact-right textarea{
 
-    height:150px;
+    height:180px;
 
     resize:none;
 }
@@ -797,23 +819,23 @@ footer{
 
     width:100%;
 
-    padding:15px;
+    padding:16px;
+
+    border:none;
+
+    border-radius:15px;
 
     background:#2563eb;
 
     color:white;
 
-    border:none;
-
-    border-radius:12px;
-
-    font-size:16px;
+    font-size:17px;
 
     font-weight:600;
 
     cursor:pointer;
 
-    transition:0.3s;
+    transition:.3s;
 }
 
 .contact-right button:hover{
@@ -823,36 +845,21 @@ footer{
     transform:translateY(-3px);
 }
 
-/* ===================
-   MOBILE
-=================== */
-
 @media(max-width:768px){
 
 .contact-container{
 
     flex-direction:column;
-
-    align-items:center;
 }
 
 .sticky-contact{
 
     width:100%;
-
-    max-width:350px;
-
-    transform:none;
 }
 
-.contact-right{
+.row{
 
-    width:100%;
-}
-
-.contact-right h2{
-
-    font-size:28px;
+    grid-template-columns:1fr;
 }
 
 }
