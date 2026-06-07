@@ -214,7 +214,43 @@ body{
 
     box-shadow:0 15px 30px rgba(0,0,0,0.15);
 }
+.hero-greeting{
 
+    font-size:48px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+    margin-bottom:10px;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:30px;
+
+    flex-wrap:wrap;
+}
+
+.btn-outline{
+
+    background:white;
+
+    color:#2563eb;
+
+    border:2px solid #2563eb;
+}
+
+.btn-outline:hover{
+
+    background:#2563eb;
+
+    color:white;
+}
 /* ==================================
    HERO EXTRA
 ================================== */
