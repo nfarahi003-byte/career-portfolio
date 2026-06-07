@@ -580,90 +580,183 @@ footer{
         justify-content:center;
     }
 }
-<!-- CONTACT -->
-<!-- CONTACT -->
+/* ==================================
+   CONTACT NEW
+================================== */
 
-<section id="contact" class="section">
+.contact-container{
 
-    <div class="section-header">
-        <span>CONTACT ME</span>
-    </div>
+display:grid;
 
-    <div class="contact-container">
+grid-template-columns:350px 1fr;
 
-        <!-- LEFT CARD -->
+gap:40px;
 
-        <div class="sticky-contact">
+align-items:start;
+}
 
-            <div class="tape"></div>
+/* LEFT CARD */
 
-            <img src="images/profile.jpg" alt="Profile" class="passport-photo">
+.contact-card-new{
 
-            <h2>My Contact</h2>
+background:white;
 
-            <div class="contact-detail">
-                <strong>👤 Name</strong>
-                <p>Nurul Farahi Binti Yahaya</p>
-            </div>
+padding:30px;
 
-            <div class="contact-detail">
-                <strong>📱 Phone</strong>
-                <p>011-XXXXXXX</p>
-            </div>
+border-radius:25px;
 
-            <div class="contact-detail">
-                <strong>📧 Email</strong>
-                <p>nfarahi003@gmail.com</p>
-            </div>
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
 
-            <div class="contact-detail">
-                <strong>📍 Location</strong>
-                <p>Terengganu, Malaysia</p>
-            </div>
+.contact-top{
 
-        </div>
+text-align:center;
 
-        <!-- RIGHT FORM -->
+margin-bottom:25px;
+}
 
-        <div class="contact-right">
+.contact-photo{
 
-            <h2>Send Me A Message</h2>
+width:130px;
+height:130px;
 
-            <p>
-                Feel free to contact me for internship,
-                collaboration or future opportunities.
-            </p>
+border-radius:50%;
 
-            <form action="https://formsubmit.co/nfarahi003@gmail.com" method="POST">
+object-fit:cover;
 
-                <input type="text"
-                name="name"
-                placeholder="Your Name"
-                required>
+border:5px solid #2563eb;
 
-                <input type="email"
-                name="email"
-                placeholder="Your Email"
-                required>
+margin-bottom:15px;
+}
 
-                <input type="text"
-                name="company"
-                placeholder="Company Name">
+.contact-name h2{
 
-                <textarea
-                name="message"
-                rows="6"
-                placeholder="Write your message..."
-                required></textarea>
+font-size:24px;
 
-                <button type="submit">
-                    Send Message
-                </button>
+margin-bottom:5px;
+}
 
-            </form>
+.contact-name p{
 
-        </div>
+color:#64748b;
 
-    </div>
+font-size:14px;
+}
 
-</section>
+.contact-info-item{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+padding:15px 0;
+
+border-bottom:1px solid #e5e7eb;
+}
+
+.contact-info-item:last-child{
+
+border-bottom:none;
+}
+
+.contact-info-item span{
+
+font-size:20px;
+}
+
+/* RIGHT FORM */
+
+.contact-form-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.contact-form-card h2{
+
+font-size:36px;
+
+margin-bottom:10px;
+}
+
+.contact-form-card p{
+
+color:#64748b;
+
+margin-bottom:25px;
+}
+
+.contact-form-card form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+}
+
+.contact-form-card input,
+.contact-form-card textarea{
+
+padding:15px;
+
+border:2px solid #e5e7eb;
+
+border-radius:15px;
+
+font-family:'Poppins',sans-serif;
+}
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus{
+
+outline:none;
+
+border-color:#2563eb;
+}
+
+.contact-form-card button{
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+padding:15px;
+
+border-radius:15px;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.contact-form-card button:hover{
+
+background:#1d4ed8;
+
+transform:translateY(-3px);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.contact-container{
+
+grid-template-columns:1fr;
+}
+
+}
