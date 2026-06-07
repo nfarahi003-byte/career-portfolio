@@ -581,44 +581,48 @@ footer{
     }
 }
 /* =====================================
-   CONTACT SCRAPBOOK DESIGN
+   CONTACT SECTION
 ===================================== */
 
 .contact-container{
     display:flex;
     justify-content:center;
     align-items:flex-start;
-    gap:50px;
-    max-width:1200px;
+    gap:30px;
+    max-width:1000px;
     margin:50px auto;
 }
 
-/* LEFT SCRAP PAPER */
+/* ===================
+   LEFT STICKY NOTE
+=================== */
 
 .sticky-contact{
 
-    width:380px;
+    width:300px;
 
     background:#fff4b5;
 
-    padding:30px;
+    padding:25px;
 
-    border-radius:25px;
+    border-radius:20px;
 
     position:relative;
 
-    box-shadow:0 15px 30px rgba(0,0,0,.15);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transform:rotate(-2deg);
 }
 
 .tape{
 
     position:absolute;
 
-    top:-15px;
-    left:40px;
+    top:-12px;
+    left:30px;
 
-    width:120px;
-    height:35px;
+    width:100px;
+    height:28px;
 
     background:#f9a8d4;
 
@@ -627,8 +631,8 @@ footer{
 
 .passport-photo{
 
-    width:180px;
-    height:180px;
+    width:130px;
+    height:130px;
 
     border-radius:50%;
 
@@ -636,66 +640,71 @@ footer{
 
     display:block;
 
-    margin:25px auto;
+    margin:20px auto;
 
-    border:8px solid white;
+    border:6px solid white;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
 .sticky-contact h2{
 
     text-align:center;
 
-    font-size:42px;
+    font-size:30px;
 
-    margin-bottom:30px;
+    margin-bottom:20px;
 
-    color:#111827;
+    color:#0f172a;
 }
 
 .contact-detail{
 
-    padding:15px 0;
+    padding:12px 0;
 
-    border-bottom:1px dashed #d6d3d1;
+    border-bottom:1px dashed #d4d4d4;
 }
 
 .contact-detail:last-child{
+
     border-bottom:none;
 }
 
 .contact-detail strong{
 
-    color:#2563eb;
-
     display:block;
 
-    margin-bottom:5px;
+    color:#2563eb;
 
-    font-size:18px;
+    font-size:16px;
+
+    margin-bottom:4px;
 }
 
 .contact-detail p{
 
-    font-size:16px;
+    font-size:15px;
 
-    color:#1f2937;
+    color:#334155;
 }
 
-/* RIGHT NOTEBOOK */
+/* ===================
+   RIGHT FORM
+=================== */
 
 .contact-right{
 
     flex:1;
 
-    background:#ffffff;
+    max-width:650px;
 
-    padding:40px;
+    background:white;
 
-    border-radius:25px;
+    padding:30px;
 
-    box-shadow:0 15px 30px rgba(0,0,0,.08);
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 
     position:relative;
 }
@@ -708,25 +717,25 @@ footer{
 
     position:absolute;
 
-    top:-15px;
+    top:-12px;
     left:0;
     right:0;
 
-    height:30px;
+    height:24px;
 
     background:
-    radial-gradient(circle,#d4d4d4 8px,transparent 9px);
+    radial-gradient(circle,#d4d4d4 6px,transparent 7px);
 
-    background-size:55px 30px;
+    background-size:45px 24px;
 }
 
 .contact-right h2{
 
     text-align:center;
 
-    font-size:45px;
+    font-size:34px;
 
-    margin-bottom:15px;
+    margin-bottom:10px;
 
     color:#0f172a;
 }
@@ -737,15 +746,18 @@ footer{
 
     color:#64748b;
 
-    margin-bottom:30px;
+    margin-bottom:25px;
+
+    font-size:15px;
 }
 
 .contact-right form{
 
     display:flex;
+
     flex-direction:column;
 
-    gap:18px;
+    gap:15px;
 }
 
 .contact-right input,
@@ -753,22 +765,17 @@ footer{
 
     width:100%;
 
-    padding:18px;
+    padding:15px;
 
     border:2px solid #e5e7eb;
 
-    border-radius:15px;
+    border-radius:12px;
 
-    font-size:16px;
+    font-size:15px;
 
     font-family:'Poppins',sans-serif;
-}
 
-.contact-right textarea{
-
-    height:220px;
-
-    resize:none;
+    transition:0.3s;
 }
 
 .contact-right input:focus,
@@ -779,21 +786,28 @@ footer{
     border-color:#2563eb;
 }
 
+.contact-right textarea{
+
+    height:150px;
+
+    resize:none;
+}
+
 .contact-right button{
 
     width:100%;
 
-    padding:18px;
-
-    border:none;
-
-    border-radius:15px;
+    padding:15px;
 
     background:#2563eb;
 
     color:white;
 
-    font-size:18px;
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
 
     font-weight:600;
 
@@ -809,23 +823,36 @@ footer{
     transform:translateY(-3px);
 }
 
-/* MOBILE */
+/* ===================
+   MOBILE
+=================== */
 
 @media(max-width:768px){
 
 .contact-container{
 
     flex-direction:column;
+
+    align-items:center;
 }
 
 .sticky-contact{
+
+    width:100%;
+
+    max-width:350px;
+
+    transform:none;
+}
+
+.contact-right{
 
     width:100%;
 }
 
 .contact-right h2{
 
-    font-size:32px;
+    font-size:28px;
 }
 
 }
