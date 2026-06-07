@@ -580,97 +580,94 @@ footer{
         justify-content:center;
     }
 }
-/* ===========================
-   CONTACT NEW
-=========================== */
+<!-- CONTACT -->
 
-/* ==========================
-   STICKY CONTACT CARD
-========================== */
+<section id="contact" class="section">
 
-.sticky-contact{
+    <div class="section-header">
+        <span>CONTACT ME</span>
+    </div>
 
-position:relative;
+    <div class="contact-container">
 
-background:#fff3b0;
+        <!-- LEFT SIDE -->
 
-padding:35px;
+        <div class="sticky-contact">
 
-border-radius:10px;
+            <div class="tape"></div>
 
-box-shadow:0 15px 25px rgba(0,0,0,.15);
+            <img src="images/profile.jpg"
+            class="passport-photo">
 
-max-width:450px;
+            <h2>My Contact</h2>
 
-margin:auto;
+            <div class="contact-detail">
+                <strong>👤 Name</strong>
+                <p>Nurul Farahi Binti Yahaya</p>
+            </div>
 
-transform:rotate(-1deg);
-}
+            <div class="contact-detail">
+                <strong>📱 Phone</strong>
+                <p>011-XXXXXXX</p>
+            </div>
 
-.tape{
+            <div class="contact-detail">
+                <strong>📧 Email</strong>
+                <p>nfarahi003@gmail.com</p>
+            </div>
 
-position:absolute;
+            <div class="contact-detail">
+                <strong>📍 Location</strong>
+                <p>Terengganu, Malaysia</p>
+            </div>
 
-top:-15px;
+        </div>
 
-left:50%;
+        <!-- RIGHT SIDE -->
 
-transform:translateX(-50%) rotate(-5deg);
+        <div class="contact-right">
 
-width:120px;
-height:30px;
+            <h2>Send Me A Message</h2>
 
-background:#fbcfe8;
+            <p>
+                Feel free to contact me for internship,
+                collaboration or future opportunities.
+            </p>
 
-opacity:.9;
-}
+            <form action="https://formsubmit.co/nfarahi003@gmail.com"
+            method="POST">
 
-.passport-photo{
+                <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required>
 
-display:block;
+                <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required>
 
-margin:auto;
+                <input
+                type="text"
+                name="company"
+                placeholder="Company Name">
 
-width:180px;
-height:220px;
+                <textarea
+                name="message"
+                rows="6"
+                placeholder="Write your message..."
+                required></textarea>
 
-object-fit:cover;
+                <button type="submit">
+                    Send Message
+                </button>
 
-background:white;
+            </form>
 
-padding:10px;
+        </div>
 
-box-shadow:0 5px 15px rgba(0,0,0,.2);
+    </div>
 
-margin-bottom:25px;
-}
-
-.sticky-contact h2{
-
-text-align:center;
-
-margin-bottom:25px;
-
-font-size:36px;
-}
-
-.contact-detail{
-
-padding:15px 0;
-
-border-bottom:1px dashed rgba(0,0,0,.2);
-}
-
-.contact-detail:last-child{
-
-border:none;
-}
-
-.contact-detail strong{
-
-display:block;
-
-margin-bottom:5px;
-
-color:#2563eb;
-}
+</section>
