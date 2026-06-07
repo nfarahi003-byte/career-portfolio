@@ -740,3 +740,67 @@ footer{
     }
 
 }
+/* =====================================
+   CONTACT SECTION
+===================================== */
+
+.contact-container{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}
+
+.sticky-contact{
+    width:280px;
+    background:#fff3b0;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transform:rotate(-2deg);
+}
+
+.contact-right{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.contact-right form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-right input,
+.contact-right textarea{
+    width:100%;
+    padding:15px;
+    border:2px solid #e5e7eb;
+    border-radius:12px;
+    font-size:15px;
+    font-family:'Poppins',sans-serif;
+}
+
+.contact-right textarea{
+    height:180px;
+    resize:none;
+}
+
+.contact-right button{
+    width:100%;
+    padding:15px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.contact-right button:hover{
+    background:#1d4ed8;
+}
+
