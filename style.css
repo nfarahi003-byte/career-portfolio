@@ -1163,3 +1163,23 @@ footer{
 
     box-shadow:0 15px 35px rgba(37,99,235,.35);
 }
+#skills .about-card{
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+#skills .tag{
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+#skills .tag:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
