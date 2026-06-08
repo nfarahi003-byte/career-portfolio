@@ -1211,9 +1211,9 @@ footer{
     }
 }
 
-/* ==========================
+/* ==================================
    CAREER ROADMAP
-========================== */
+================================== */
 
 .roadmap-container{
 
@@ -1224,29 +1224,45 @@ footer{
 
     gap:30px;
 
-    margin-top:50px;
+    margin-top:40px;
 }
 
 .roadmap-card{
 
     background:white;
 
-    padding:30px;
+    padding:35px;
 
     border-radius:25px;
 
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 
-    transition:.35s;
-    
+    transition:.3s;
+
     position:relative;
 
     overflow:hidden;
 }
 
+.roadmap-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:6px;
+
+    background:#2563eb;
+}
+
 .roadmap-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-8px);
 
     box-shadow:0 15px 35px rgba(37,99,235,.20);
 }
@@ -1288,21 +1304,5 @@ footer{
 
     color:#475569;
 
-    line-height:1.6;
-}
-
-.roadmap-card::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:0;
-
-    width:100%;
-
-    height:5px;
-
-    background:#2563eb;
+    line-height:1.7;
 }
