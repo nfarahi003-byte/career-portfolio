@@ -577,6 +577,46 @@ body{
     line-height:1.8;
 }
 
+/* CAREER INSIGHTS */
+
+.career-insights{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:25px;
+
+    margin-top:40px;
+}
+
+.career-info-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.career-info-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+}
+
+.career-info-card p{
+
+    line-height:1.8;
+
+    color:#475569;
+
+    margin-bottom:15px;
+}
+
 /* ==================================
    TOOLS
 ================================== */
