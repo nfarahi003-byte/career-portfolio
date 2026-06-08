@@ -93,12 +93,12 @@ body{
     min-height:100vh;
 
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
 
     gap:80px;
 
-    padding:0 8%;
+    padding:120px 8% 80px;
 
     background:
     linear-gradient(
@@ -107,6 +107,8 @@ body{
         rgba(192,132,252,0.15)
     );
 }
+
+/* LEFT SIDE */
 
 .hero-content{
 
@@ -119,13 +121,13 @@ body{
 
     display:inline-block;
 
-    padding:10px 20px;
+    padding:12px 22px;
 
     background:white;
 
     border-left:4px solid #2563eb;
 
-    border-radius:10px;
+    border-radius:12px;
 
     font-size:14px;
 
@@ -140,18 +142,18 @@ body{
 
 .hero-greeting{
 
-    font-size:32px;
+    font-size:42px;
 
     font-weight:600;
 
     color:#475569;
 
-    margin-bottom:5px;
+    margin-bottom:10px;
 }
 
 .hero-content h1{
 
-    font-size:70px;
+    font-size:72px;
 
     line-height:1.1;
 
@@ -166,27 +168,29 @@ body{
 
     color:#2563eb;
 
-    margin-bottom:25px;
-
     font-weight:600;
+
+    margin-bottom:25px;
 }
 
 .hero-content p{
 
-    font-size:17px;
+    font-size:18px;
 
     line-height:1.9;
 
     color:#475569;
 
-    max-width:600px;
+    max-width:650px;
 }
+
+/* BUTTONS */
 
 .hero-buttons{
 
     display:flex;
 
-    gap:20px;
+    gap:15px;
 
     flex-wrap:wrap;
 
@@ -199,13 +203,13 @@ body{
 
     text-decoration:none;
 
-    padding:15px 28px;
+    padding:15px 30px;
 
     border-radius:15px;
 
     font-weight:600;
 
-    transition:0.3s;
+    transition:.3s;
 }
 
 .resume-btn{
@@ -235,8 +239,10 @@ body{
 
     background:#eff6ff;
 
-    color:#2563eb;
+    transform:translateY(-3px);
 }
+
+/* RIGHT SIDE */
 
 .hero-image{
 
@@ -245,12 +251,15 @@ body{
     display:flex;
 
     justify-content:center;
+
+    align-items:center;
 }
 
 .hero-image img{
 
-    width:350px;
-    height:350px;
+    width:400px;
+
+    height:400px;
 
     object-fit:cover;
 
@@ -258,7 +267,60 @@ body{
 
     border:10px solid white;
 
-    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        gap:40px;
+
+        padding:140px 8% 80px;
+    }
+
+    .hero-content{
+
+        max-width:100%;
+    }
+
+    .hero-greeting{
+
+        font-size:32px;
+    }
+
+    .hero-content h1{
+
+        font-size:50px;
+    }
+
+    .hero-content h2{
+
+        font-size:22px;
+    }
+
+    .hero-content p{
+
+        font-size:16px;
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+    }
+
+    .hero-image img{
+
+        width:280px;
+
+        height:280px;
+    }
 }
 /* ==================================
    SECTIONS
