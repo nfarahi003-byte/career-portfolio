@@ -1210,3 +1210,99 @@ footer{
         width:0;
     }
 }
+
+/* ==========================
+   CAREER ROADMAP
+========================== */
+
+.roadmap-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+}
+
+.roadmap-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+    
+    position:relative;
+
+    overflow:hidden;
+}
+
+.roadmap-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(37,99,235,.20);
+}
+
+.roadmap-year{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+}
+
+.roadmap-card h3{
+
+    margin-bottom:20px;
+
+    color:#0f172a;
+}
+
+.roadmap-card ul{
+
+    padding-left:20px;
+}
+
+.roadmap-card li{
+
+    margin-bottom:12px;
+
+    color:#475569;
+
+    line-height:1.6;
+}
+
+.roadmap-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:#2563eb;
+}
