@@ -1116,26 +1116,97 @@ footer{
 }
 
 /* ==========================
-   INTERACTIVE SKILLS
+   SKILL QUEST
 ========================== */
 
-#skills .about-card{
+.quest-card{
 
-    max-width:1200px;
+    max-width:900px;
 
     margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
-#skills .tag{
+.quest-item{
 
-    transition:.3s;
-
-    cursor:pointer;
+    margin-bottom:30px;
 }
 
-#skills .tag:hover{
+.quest-header{
 
-    transform:translateY(-5px);
+    display:flex;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    justify-content:space-between;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+}
+
+.quest-bar{
+
+    width:100%;
+
+    height:18px;
+
+    background:#e5e7eb;
+
+    border-radius:50px;
+
+    overflow:hidden;
+}
+
+.quest-fill{
+
+    height:100%;
+
+    border-radius:50px;
+
+    animation:fillBar 2s ease forwards;
+
+    width:0;
+}
+
+.support{
+    width:90%;
+    background:#2563eb;
+}
+
+.networking{
+    width:80%;
+    background:#10b981;
+}
+
+.security{
+    width:75%;
+    background:#ef4444;
+}
+
+.linux{
+    width:65%;
+    background:#f59e0b;
+}
+
+.python{
+    width:70%;
+    background:#8b5cf6;
+}
+
+.communication{
+    width:85%;
+    background:#ec4899;
+}
+
+@keyframes fillBar{
+
+    from{
+        width:0;
+    }
 }
