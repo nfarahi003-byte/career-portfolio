@@ -243,16 +243,58 @@ body{
     display:flex;
 
     justify-content:center;
+
+    align-items:center;
 }
 
 .hero-photo-wrapper{
 
     position:relative;
 
-    width:500px;
+    width:520px;
     height:500px;
 }
 
+/* MAIN PASSPORT PHOTO */
+
+.main-profile{
+
+    position:absolute;
+
+    right:20px;
+    bottom:20px;
+
+    width:380px;
+    height:380px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:10px solid white;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+    z-index:2;
+}
+
+/* POLAROID PHOTO */
+
+.polaroid{
+
+    position:absolute;
+
+    left:80px;
+
+    bottom:120px;
+
+    width:130px;
+
+    background:white;
+
+    padding:8px 8px 25px;
+
+   
 /* MAIN PHOTO */
 
 .main-profile{
