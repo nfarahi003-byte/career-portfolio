@@ -115,8 +115,6 @@ body{
     max-width:650px;
 }
 
-/* SMALL BADGE */
-
 .welcome-badge{
 
     display:inline-block;
@@ -140,8 +138,6 @@ body{
     box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
-/* HI I'M */
-
 .hero-greeting{
 
     font-size:32px;
@@ -152,8 +148,6 @@ body{
 
     margin-bottom:5px;
 }
-
-/* NAME */
 
 .hero-content h1{
 
@@ -166,8 +160,6 @@ body{
     margin-bottom:15px;
 }
 
-/* COURSE */
-
 .hero-content h2{
 
     font-size:28px;
@@ -178,8 +170,6 @@ body{
 
     font-weight:600;
 }
-
-/* DESCRIPTION */
 
 .hero-content p{
 
@@ -192,13 +182,11 @@ body{
     max-width:600px;
 }
 
-/* BUTTONS */
-
 .hero-buttons{
 
     display:flex;
 
-    gap:15px;
+    gap:20px;
 
     flex-wrap:wrap;
 
@@ -206,6 +194,8 @@ body{
 }
 
 .btn{
+
+    display:inline-block;
 
     text-decoration:none;
 
@@ -234,7 +224,42 @@ body{
 
 .portfolio-btn{
 
-    background:white
+    background:white;
+
+    color:#2563eb;
+
+    border:2px solid #2563eb;
+}
+
+.portfolio-btn:hover{
+
+    background:#eff6ff;
+
+    color:#2563eb;
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+.hero-image img{
+
+    width:350px;
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:10px solid white;
+
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
 /* ==================================
    SECTIONS
 ================================== */
