@@ -473,6 +473,20 @@ body{
     color:#475569;
 }
 
+#skills .about-card{
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+#skills h2{
+
+    color:#0f172a;
+
+    margin-bottom:20px;
+}
+
 /* ==================================
    TAGS
 ================================== */
