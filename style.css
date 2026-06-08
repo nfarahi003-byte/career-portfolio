@@ -108,32 +108,13 @@ body{
     );
 }
 
+/* LEFT CONTENT */
+
 .hero-content{
 
     flex:1;
 
     max-width:650px;
-}
-
-.welcome-badge{
-
-    display:inline-block;
-
-    padding:12px 22px;
-
-    background:white;
-
-    color:#2563eb;
-
-    font-size:14px;
-
-    font-weight:600;
-
-    border-radius:12px;
-
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-
-    margin-bottom:25px;
 }
 
 .hero-greeting{
@@ -142,7 +123,7 @@ body{
 
     font-weight:700;
 
-    color:#334155;
+    color:#475569;
 
     margin-bottom:5px;
 }
@@ -234,7 +215,9 @@ body{
     transform:translateY(-4px);
 }
 
-/* HERO IMAGE */
+/* ==================================
+   HERO IMAGE
+================================== */
 
 .hero-image{
 
@@ -251,173 +234,30 @@ body{
 
     position:relative;
 
-    width:500px;
+    width:550px;
+
     height:500px;
 }
 
-/* PASSPORT PHOTO */
-
-.main-profile{
-
-    position:absolute;
-
-    right:0;
-    bottom:0;
-
-    width:360px;
-    height:360px;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    border:10px solid white;
-
-    box-shadow:0 15px 30px rgba(0,0,0,.15);
-
-    z-index:2;
-}
-
-/* POLAROID */
+/* CASUAL PHOTO */
 
 .polaroid{
 
     position:absolute;
 
-    left:40px;
-
-    bottom:120px;
-
-    width:130px;
-
-    background:white;
-
-    padding:8px 8px 25px;
-
-    transform:rotate(-10deg);
-
-    box-shadow:0 10px 20px rgba(0,0,0,.15);
-
-    z-index:3;
-}
-
-.polaroid img{
-
-    width:100%;
-
-    height:140px;
-
-    object-fit:cover;
-
-    display:block;
-
-    border:none;
-
-    border-radius:0;
-
-    box-shadow:none;
-}
-
-/* TAPE */
-
-.polaroid-tape{
-
-    position:absolute;
-
-    top:-10px;
-
-    left:25px;
-
-    width:80px;
-
-    height:20px;
-
-    background:#f9a8d4;
-
-    transform:rotate(-8deg);
-}
-
-/* MAIN PASSPORT PHOTO */
-
-.main-profile{
-
-    position:absolute;
-
-    right:20px;
-    bottom:20px;
-
-    width:380px;
-    height:380px;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    border:10px solid white;
-
-    box-shadow:0 15px 30px rgba(0,0,0,.15);
-
-    z-index:2;
-}
-
-/* POLAROID PHOTO */
-
-.polaroid{
-
-    position:absolute;
+    top:20px;
 
     left:80px;
 
-    bottom:120px;
-
-    width:130px;
+    width:250px;
 
     background:white;
 
-    padding:8px 8px 25px;
-
-   
-/* MAIN PHOTO */
-
-.main-profile{
-
-    position:absolute;
-
-    right:0;
-    bottom:0;
-
-    width:380px;
-    height:380px;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    border:10px solid white;
-
-    box-shadow:0 15px 30px rgba(0,0,0,.15);
-
-    z-index:2;
-}
-
-/* POLAROID */
-
-.polaroid{
-
-    position:absolute;
-
-    top:40px;
-    left:20px;
-
-    width:180px;
-
-    background:white;
-
-    padding:10px 10px 40px;
+    padding:12px 12px 45px;
 
     transform:rotate(-8deg);
 
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 
     z-index:1;
 }
@@ -426,24 +266,79 @@ body{
 
     width:100%;
 
-    height:220px;
+    height:280px;
 
     object-fit:cover;
+
+    display:block;
 }
 
 .polaroid-tape{
 
     position:absolute;
 
-    width:90px;
+    top:-12px;
+
+    left:75px;
+
+    width:100px;
+
     height:25px;
 
     background:#f9a8d4;
 
-    top:-12px;
-    left:45px;
+    transform:rotate(-10deg);
+}
 
-    transform:rotate(-8deg);
+/* PASSPORT PHOTO */
+
+.main-profile{
+
+    position:absolute;
+
+    right:50px;
+
+    bottom:40px;
+
+    width:130px;
+
+    background:white;
+
+    padding:8px 8px 20px;
+
+    transform:rotate(8deg);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+    z-index:3;
+}
+
+.main-profile img{
+
+    width:100%;
+
+    height:150px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+.passport-tape{
+
+    position:absolute;
+
+    top:-10px;
+
+    right:25px;
+
+    width:60px;
+
+    height:18px;
+
+    background:#fbcfe8;
+
+    transform:rotate(-15deg);
 }
 
 /* MOBILE */
@@ -477,23 +372,30 @@ body{
 .hero-photo-wrapper{
 
     width:350px;
+
     height:350px;
-}
-
-.main-profile{
-
-    width:260px;
-    height:260px;
 }
 
 .polaroid{
 
-    width:120px;
+    width:180px;
+
+    left:20px;
 }
 
 .polaroid img{
 
-    height:150px;
+    height:200px;
+}
+
+.main-profile{
+
+    width:100px;
+}
+
+.main-profile img{
+
+    height:120px;
 }
 
 .hero-buttons{
