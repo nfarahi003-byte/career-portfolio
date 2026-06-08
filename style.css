@@ -108,7 +108,9 @@ body{
     );
 }
 
-/* LEFT CONTENT */
+/* ==========================
+   HERO CONTENT
+========================== */
 
 .hero-content{
 
@@ -159,7 +161,9 @@ body{
     margin-bottom:15px;
 }
 
-/* BUTTONS */
+/* ==========================
+   BUTTONS
+========================== */
 
 .hero-buttons{
 
@@ -177,141 +181,6 @@ body{
     text-decoration:none;
 
     padding:15px 30px;
-
-    border-radius:15px;
-
-    font-weight:600;
-
-    transition:.3s;
-}
-
-.resume-btn{
-
-    background:#2563eb;
-
-    color:white;
-}
-
-.resume-btn:hover{
-
-    background:#1d4ed8;
-
-    transform:translateY(-4px);
-}
-
-.portfolio-btn{
-
-    background:white;
-
-    color:#2563eb;
-
-    border:2px solid #2563eb;
-}
-
-.portfolio-btn:hover{
-
-    background:#eff6ff;
-
-    transform:translateY(-4px);
-}
-
-/* ==================================
-   HERO
-================================== */
-
-.hero{
-
-    min-height:100vh;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    gap:80px;
-
-    padding:120px 8% 80px;
-
-    background:
-    linear-gradient(
-        135deg,
-        rgba(96,165,250,0.10),
-        rgba(192,132,252,0.10)
-    );
-}
-
-/* ==========================
-   HERO CONTENT
-========================== */
-
-.hero-content{
-
-    flex:1;
-
-    max-width:650px;
-}
-
-.hero-greeting{
-
-    font-size:48px;
-
-    font-weight:700;
-
-    color:#475569;
-
-    margin-bottom:10px;
-}
-
-.hero-content h1{
-
-    font-size:75px;
-
-    line-height:1.1;
-
-    color:#0f172a;
-
-    margin-bottom:15px;
-}
-
-.hero-content h2{
-
-    font-size:38px;
-
-    color:#2563eb;
-
-    margin-bottom:25px;
-}
-
-.hero-content p{
-
-    font-size:18px;
-
-    line-height:1.9;
-
-    color:#475569;
-
-    margin-bottom:15px;
-}
-
-/* ==========================
-   BUTTONS
-========================== */
-
-.hero-buttons{
-
-    display:flex;
-
-    gap:15px;
-
-    flex-wrap:wrap;
-
-    margin-top:30px;
-}
-
-.btn{
-
-    text-decoration:none;
-
-    padding:15px 28px;
 
     border-radius:15px;
 
@@ -369,14 +238,12 @@ body{
 
     position:relative;
 
-    width:550px;
+    width:500px;
 
-    height:520px;
+    height:500px;
 }
 
-/* ==========================
-   CASUAL POLAROID
-========================== */
+/* CASUAL PHOTO */
 
 .polaroid{
 
@@ -384,13 +251,13 @@ body{
 
     top:20px;
 
-    left:40px;
+    left:50px;
 
-    width:300px;
+    width:260px;
 
     background:white;
 
-    padding:12px 12px 60px;
+    padding:12px 12px 55px;
 
     transform:rotate(-8deg);
 
@@ -403,7 +270,7 @@ body{
 
     width:100%;
 
-    height:330px;
+    height:300px;
 
     object-fit:cover;
 
@@ -416,20 +283,18 @@ body{
 
     top:-12px;
 
-    left:95px;
+    left:75px;
 
-    width:110px;
+    width:100px;
 
-    height:28px;
+    height:25px;
 
     background:#f9a8d4;
 
     transform:rotate(8deg);
 }
 
-/* ==========================
-   PASSPORT PHOTO
-========================== */
+/* PASSPORT PHOTO */
 
 .passport-card{
 
@@ -437,9 +302,9 @@ body{
 
     right:40px;
 
-    bottom:30px;
+    bottom:50px;
 
-    width:150px;
+    width:120px;
 
     background:white;
 
@@ -456,7 +321,7 @@ body{
 
     width:100%;
 
-    height:180px;
+    height:150px;
 
     object-fit:cover;
 
@@ -467,11 +332,11 @@ body{
 
     position:absolute;
 
-    top:-10px;
+    top:-8px;
 
-    left:35px;
+    left:28px;
 
-    width:70px;
+    width:60px;
 
     height:18px;
 
