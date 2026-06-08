@@ -85,7 +85,7 @@ body{
 }
 
 /* ==================================
-   HERO SECTION
+   HERO
 ================================== */
 
 .hero{
@@ -103,12 +103,10 @@ body{
     background:
     linear-gradient(
         135deg,
-        rgba(96,165,250,0.15),
-        rgba(192,132,252,0.15)
+        rgba(96,165,250,0.10),
+        rgba(192,132,252,0.10)
     );
 }
-
-/* LEFT SIDE */
 
 .hero-content{
 
@@ -125,35 +123,33 @@ body{
 
     background:white;
 
-    border-left:4px solid #2563eb;
-
-    border-radius:12px;
+    color:#2563eb;
 
     font-size:14px;
 
     font-weight:600;
 
-    color:#2563eb;
+    border-radius:12px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
 
     margin-bottom:25px;
-
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
 .hero-greeting{
 
-    font-size:42px;
+    font-size:55px;
 
-    font-weight:600;
+    font-weight:700;
 
-    color:#475569;
+    color:#334155;
 
-    margin-bottom:10px;
+    margin-bottom:5px;
 }
 
 .hero-content h1{
 
-    font-size:72px;
+    font-size:78px;
 
     line-height:1.1;
 
@@ -164,11 +160,9 @@ body{
 
 .hero-content h2{
 
-    font-size:28px;
+    font-size:42px;
 
     color:#2563eb;
-
-    font-weight:600;
 
     margin-bottom:25px;
 }
@@ -181,7 +175,7 @@ body{
 
     color:#475569;
 
-    max-width:650px;
+    margin-bottom:15px;
 }
 
 /* BUTTONS */
@@ -192,14 +186,12 @@ body{
 
     gap:15px;
 
-    flex-wrap:wrap;
-
     margin-top:35px;
+
+    flex-wrap:wrap;
 }
 
 .btn{
-
-    display:inline-block;
 
     text-decoration:none;
 
@@ -223,7 +215,7 @@ body{
 
     background:#1d4ed8;
 
-    transform:translateY(-3px);
+    transform:translateY(-4px);
 }
 
 .portfolio-btn{
@@ -239,10 +231,10 @@ body{
 
     background:#eff6ff;
 
-    transform:translateY(-3px);
+    transform:translateY(-4px);
 }
 
-/* RIGHT SIDE */
+/* HERO IMAGE */
 
 .hero-image{
 
@@ -251,15 +243,27 @@ body{
     display:flex;
 
     justify-content:center;
-
-    align-items:center;
 }
 
-.hero-image img{
+.hero-photo-wrapper{
 
-    width:400px;
+    position:relative;
 
-    height:400px;
+    width:500px;
+    height:500px;
+}
+
+/* MAIN PHOTO */
+
+.main-profile{
+
+    position:absolute;
+
+    right:0;
+    bottom:0;
+
+    width:380px;
+    height:380px;
 
     object-fit:cover;
 
@@ -268,59 +272,111 @@ body{
     border:10px solid white;
 
     box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+    z-index:2;
+}
+
+/* POLAROID */
+
+.polaroid{
+
+    position:absolute;
+
+    top:40px;
+    left:20px;
+
+    width:180px;
+
+    background:white;
+
+    padding:10px 10px 40px;
+
+    transform:rotate(-8deg);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    z-index:1;
+}
+
+.polaroid img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+}
+
+.polaroid-tape{
+
+    position:absolute;
+
+    width:90px;
+    height:25px;
+
+    background:#f9a8d4;
+
+    top:-12px;
+    left:45px;
+
+    transform:rotate(-8deg);
 }
 
 /* MOBILE */
 
 @media(max-width:768px){
 
-    .hero{
+.hero{
 
-        flex-direction:column-reverse;
+    flex-direction:column-reverse;
 
-        text-align:center;
+    text-align:center;
 
-        gap:40px;
+    padding-top:140px;
+}
 
-        padding:140px 8% 80px;
-    }
+.hero-content h1{
 
-    .hero-content{
+    font-size:48px;
+}
 
-        max-width:100%;
-    }
+.hero-content h2{
 
-    .hero-greeting{
+    font-size:28px;
+}
 
-        font-size:32px;
-    }
+.hero-greeting{
 
-    .hero-content h1{
+    font-size:35px;
+}
 
-        font-size:50px;
-    }
+.hero-photo-wrapper{
 
-    .hero-content h2{
+    width:350px;
+    height:350px;
+}
 
-        font-size:22px;
-    }
+.main-profile{
 
-    .hero-content p{
+    width:260px;
+    height:260px;
+}
 
-        font-size:16px;
-    }
+.polaroid{
 
-    .hero-buttons{
+    width:120px;
+}
 
-        justify-content:center;
-    }
+.polaroid img{
 
-    .hero-image img{
+    height:150px;
+}
 
-        width:280px;
+.hero-buttons{
 
-        height:280px;
-    }
+    justify-content:center;
+}
+
 }
 /* ==================================
    SECTIONS
