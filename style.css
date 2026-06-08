@@ -1119,50 +1119,6 @@ footer{
    INTERACTIVE SKILLS
 ========================== */
 
-.skills-container{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    gap:20px;
-
-    margin-top:40px;
-}
-
-.skill-box{
-
-    background:white;
-
-    padding:20px 30px;
-
-    border-radius:20px;
-
-    font-size:20px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-
-    transition:all .3s ease;
-}
-
-.skill-box:hover{
-
-    transform:
-    translateY(-10px)
-    rotate(-3deg);
-
-    background:#2563eb;
-
-    color:white;
-
-    box-shadow:0 15px 35px rgba(37,99,235,.35);
-}
 #skills .about-card{
 
     max-width:1200px;
