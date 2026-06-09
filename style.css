@@ -1115,124 +1115,101 @@ footer{
 
 }
 
-<!-- SKILLS -->
+/* ==================================
+   MY TOOLKIT
+================================== */
 
-<section id="skills" class="section">
+.toolkit-grid{
 
-    <div class="section-header">
-        <span>MY TOOLKIT</span>
-    </div>
+    display:grid;
 
-    <div class="toolkit-grid">
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
 
-        <!-- Programming -->
+    gap:25px;
 
-        <div class="toolkit-card">
+    margin-top:40px;
+}
 
-            <h3>💻 Programming</h3>
+.toolkit-card{
 
-            <div class="skill-tags">
+    background:white;
 
-                <span>Java</span>
-                <span>JavaScript</span>
-                <span>Python</span>
-                <span>PHP</span>
-                <span>C++</span>
-                <span>C#</span>
-                <span>Lua</span>
+    padding:30px;
 
-            </div>
+    border-radius:25px;
 
-        </div>
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 
-        <!-- Web Development -->
+    transition:.3s;
 
-        <div class="toolkit-card">
+    position:relative;
+}
 
-            <h3>🌐 Web Development</h3>
+.toolkit-card:hover{
 
-            <div class="skill-tags">
+    transform:translateY(-8px);
 
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Laravel</span>
-                <span>Responsive Design</span>
+    box-shadow:0 15px 35px rgba(37,99,235,.18);
+}
 
-            </div>
+.toolkit-card::before{
 
-        </div>
+    content:"";
 
-        <!-- Database -->
+    position:absolute;
 
-        <div class="toolkit-card">
+    top:0;
+    left:0;
 
-            <h3>🗄️ Database Systems</h3>
+    width:100%;
 
-            <div class="skill-tags">
+    height:6px;
 
-                <span>MySQL</span>
+    background:#2563eb;
 
-            </div>
+    border-radius:25px 25px 0 0;
+}
 
-        </div>
+.toolkit-card h3{
 
-        <!-- Multimedia -->
+    margin-bottom:20px;
 
-        <div class="toolkit-card">
+    color:#0f172a;
+}
 
-            <h3>🎨 Multimedia & Design</h3>
+.skill-tags{
 
-            <div class="skill-tags">
+    display:flex;
 
-                <span>Canva</span>
-                <span>Adobe Illustrator</span>
-                <span>Adobe Animate</span>
-                <span>Autodesk Maya</span>
-                <span>Photography</span>
-                <span>Photo Editing</span>
+    flex-wrap:wrap;
 
-            </div>
+    gap:12px;
+}
 
-        </div>
+.skill-tags span{
 
-        <!-- Professional -->
+    background:#eff6ff;
 
-        <div class="toolkit-card">
+    color:#2563eb;
 
-            <h3>🤝 Professional Skills</h3>
+    padding:10px 15px;
 
-            <div class="skill-tags">
+    border-radius:50px;
 
-                <span>Communication</span>
-                <span>Teamwork</span>
-                <span>Problem Solving</span>
-                <span>Time Management</span>
-                <span>Leadership</span>
-                <span>Adaptability</span>
-                <span>Fast Learner</span>
+    font-size:14px;
 
-            </div>
+    transition:.3s;
+}
 
-        </div>
+.skill-tags span:hover{
 
-        <!-- Languages -->
+    background:#2563eb;
 
-        <div class="toolkit-card">
+    color:white;
 
-            <h3>🌎 Language Skills</h3>
-
-            <div class="skill-tags">
-
-                <span>Malay (Fluent)</span>
-                <span>English (Intermediate)</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+    transform:translateY(-3px);
+}
 
 /* ==================================
    ROADMAP
