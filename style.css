@@ -631,49 +631,85 @@ body{
     margin-bottom:15px;
 }
 
-/* ==================================
+/* ==========================
    TOOLS
-================================== */
+========================== */
 
 .tools-grid{
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(150px,1fr));
+    flex-wrap:wrap;
 
-    gap:25px;
+    gap:18px;
+
+    justify-content:center;
+
+    margin-top:30px;
 }
 
-.tool-card{
+.tool-tag{
 
-    background:white;
+    display:flex;
 
-    text-align:center;
+    align-items:center;
 
-    padding:30px;
+    gap:10px;
 
-    border-radius:20px;
+    padding:14px 22px;
 
-    font-size:45px;
+    border-radius:50px;
 
-    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    font-weight:600;
 
-    transition:0.3s;
+    transition:.3s;
+
+    cursor:pointer;
 }
 
-.tool-card:hover{
+.tool-tag img{
 
-    transform:translateY(-8px);
+    width:24px;
+
+    height:24px;
+
+    object-fit:contain;
 }
 
-.tool-card p{
+.tool-tag:hover{
 
-    margin-top:10px;
+    transform:
+    translateY(-5px)
+    scale(1.05);
 
-    font-size:16px;
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.12);
+}
 
-    font-weight:500;
+/* COLORS */
+
+.blue{
+    background:#b7d2f5;
+}
+
+.green{
+    background:#b8ecc7;
+}
+
+.purple{
+    background:#d5cbf6;
+}
+
+.orange{
+    background:#f6d1a3;
+}
+
+.pink{
+    background:#f5c6e4;
+}
+
+.yellow{
+    background:#f6e087;
 }
 
 
