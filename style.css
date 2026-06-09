@@ -1116,22 +1116,21 @@ footer{
 }
 
 /* ==================================
-   MY TOOLKIT
+   MY SKILLS
 ================================== */
 
-.toolkit-grid{
+.skills-wrapper{
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(320px,1fr));
+    flex-direction:column;
 
-    gap:25px;
+    gap:35px;
 
     margin-top:40px;
 }
 
-.toolkit-card{
+.skill-group{
 
     background:white;
 
@@ -1142,75 +1141,149 @@ footer{
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 
     transition:.3s;
-
-    position:relative;
 }
 
-.toolkit-card:hover{
+.skill-group:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-5px);
 
-    box-shadow:0 15px 35px rgba(37,99,235,.18);
+    box-shadow:0 15px 35px rgba(37,99,235,.12);
 }
 
-.toolkit-card::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:0;
-
-    width:100%;
-
-    height:6px;
-
-    background:#2563eb;
-
-    border-radius:25px 25px 0 0;
-}
-
-.toolkit-card h3{
+.skill-group h3{
 
     margin-bottom:20px;
 
     color:#0f172a;
 }
 
-.skill-tags{
+.ticket-container{
 
     display:flex;
 
     flex-wrap:wrap;
 
-    gap:12px;
+    gap:18px;
 }
 
-.skill-tags span{
+/* TICKET */
 
-    background:#eff6ff;
+.ticket{
+
+    position:relative;
+
+    background:white;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    border:2px dashed #2563eb;
+
+    font-weight:600;
 
     color:#2563eb;
 
-    padding:10px 15px;
-
-    border-radius:50px;
-
-    font-size:14px;
+    cursor:pointer;
 
     transition:.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
-.skill-tags span:hover{
+/* Lubang ticket kiri */
+
+.ticket::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-8px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:14px;
+
+    height:14px;
+
+    background:#f8fafc;
+
+    border-radius:50%;
+
+    border:2px solid #dbeafe;
+}
+
+/* Lubang ticket kanan */
+
+.ticket::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-8px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:14px;
+
+    height:14px;
+
+    background:#f8fafc;
+
+    border-radius:50%;
+
+    border:2px solid #dbeafe;
+}
+
+/* Hover */
+
+.ticket:hover{
+
+    transform:
+    translateY(-8px)
+    rotate(-3deg);
 
     background:#2563eb;
 
     color:white;
 
-    transform:translateY(-3px);
+    box-shadow:
+    0 15px 25px rgba(37,99,235,.25);
 }
 
+/* Random rotation */
+
+.ticket:nth-child(odd){
+
+    transform:rotate(-1deg);
+}
+
+.ticket:nth-child(even){
+
+    transform:rotate(1deg);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.ticket-container{
+
+    justify-content:center;
+}
+
+.skill-group{
+
+    padding:20px;
+}
+
+}
 /* ==================================
    ROADMAP
 ================================== */
