@@ -639,74 +639,70 @@ body{
 
     display:flex;
     flex-wrap:wrap;
-    gap:15px;
     justify-content:center;
-    margin-top:25px;
+    gap:20px;
+    margin-top:30px;
 }
 
-.tool-tag{
+.tool-card{
+
+    width:130px;
+    height:130px;
+
+    background:#ffffff;
+
+    border-radius:20px;
 
     display:flex;
+    flex-direction:column;
+    justify-content:center;
     align-items:center;
-    gap:8px;
 
-    padding:10px 18px;
+    text-align:center;
 
-    border-radius:50px;
-
-    font-size:15px;
-    font-weight:600;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 
     transition:.3s;
-    cursor:pointer;
 }
 
-.tool-tag img{
+.tool-card:hover{
 
-    width:24px;
-    height:24px;
+    transform:
+    translateY(-8px)
+    rotate(-2deg);
+
+    box-shadow:
+    0 15px 25px rgba(0,0,0,.15);
+}
+
+/* LOGO */
+
+.tool-card img{
+
+    width:45px !important;
+    height:45px !important;
 
     object-fit:contain;
 
-    flex-shrink:0;
+    display:block;
+
+    margin-bottom:10px;
 }
 
-.tool-tag:hover{
+/* TEXT */
 
-    transform:
-    translateY(-4px)
-    scale(1.03);
+.tool-card p{
 
-    box-shadow:
-    0 8px 15px rgba(0,0,0,.12);
+    font-size:14px;
+
+    font-weight:600;
+
+    line-height:1.3;
+
+    margin:0;
+
+    color:#0f172a;
 }
-
-/* COLORS */
-
-.blue{
-    background:#b7d2f5;
-}
-
-.green{
-    background:#b8ecc7;
-}
-
-.purple{
-    background:#d5cbf6;
-}
-
-.orange{
-    background:#f6d1a3;
-}
-
-.pink{
-    background:#f5c6e4;
-}
-
-.yellow{
-    background:#f6e087;
-}
-
 
 /* ==================================
    EDUCATION
