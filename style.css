@@ -1604,3 +1604,254 @@ footer{
 }
 
 }
+
+
+/* ===================================
+   CAREER DEVELOPMENT PLAN
+=================================== */
+
+.career-section{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    margin-bottom:40px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.career-section h2{
+
+    font-size:30px;
+
+    color:#0f172a;
+
+    margin-bottom:25px;
+}
+
+.career-desc{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+    margin-bottom:25px;
+}
+
+/* ==========================
+   INDUSTRY COMPARISON
+========================== */
+
+.compare-table{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid #e2e8f0;
+}
+
+.compare-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    border-bottom:1px solid #e2e8f0;
+}
+
+.compare-row:last-child{
+
+    border-bottom:none;
+}
+
+.compare-row div{
+
+    padding:18px;
+
+    background:white;
+}
+
+.compare-row.header div{
+
+    background:#2563eb;
+
+    color:white;
+
+    font-weight:600;
+}
+
+/* ==========================
+   CERTIFICATIONS
+========================== */
+
+.cert-list{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+.cert-item{
+
+    background:#eff6ff;
+
+    border-left:5px solid #2563eb;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.cert-item:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 10px 20px rgba(37,99,235,.12);
+}
+
+/* ==========================
+   TOOLS USED
+========================== */
+
+.tools-used{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+}
+
+.tools-used span{
+
+    background:#dbeafe;
+
+    color:#1d4ed8;
+
+    padding:12px 20px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.tools-used span:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+    transform:translateY(-4px);
+}
+
+/* ==========================
+   ROADMAP
+========================== */
+
+.roadmap-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+}
+
+.roadmap-card{
+
+    background:#f8fafc;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    transition:.3s;
+}
+
+.roadmap-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 30px rgba(37,99,235,.15);
+}
+
+.roadmap-year{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+}
+
+.roadmap-card h3{
+
+    margin-bottom:15px;
+
+    color:#0f172a;
+}
+
+.roadmap-card ul{
+
+    padding-left:20px;
+}
+
+.roadmap-card li{
+
+    margin-bottom:10px;
+
+    color:#475569;
+
+    line-height:1.6;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.compare-row{
+
+    grid-template-columns:1fr;
+}
+
+.career-section{
+
+    padding:25px;
+}
+
+.career-section h2{
+
+    font-size:24px;
+}
+
+}
