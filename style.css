@@ -632,13 +632,56 @@ body{
 }
 
 
-/* ==================================
-   EDUCATION
-================================== */
+.education-container{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+}
 
 .education-card{
 
-    text-align:center;
+    background:white;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.education-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(37,99,235,.15);
+}
+
+.edu-year{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
 }
 
 .education-card h3{
@@ -646,6 +689,24 @@ body{
     color:#2563eb;
 
     margin-bottom:10px;
+
+    font-size:28px;
+}
+
+.education-card h4{
+
+    color:#334155;
+
+    margin-bottom:15px;
+
+    font-weight:500;
+}
+
+.education-card p{
+
+    color:#475569;
+
+    font-size:17px;
 }
 
 /* ==================================
