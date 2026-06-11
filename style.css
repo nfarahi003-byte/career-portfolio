@@ -593,19 +593,13 @@ body{
 
     background:#fff;
 
-    padding:20px;
+    padding:15px;
 
     border-radius:25px;
 
-    box-shadow:
-    0 5px 15px rgba(0,0,0,.05);
-}
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
 
-.website-showcase h3{
-
-    color:#2563eb;
-
-    margin-bottom:15px;
+    height:250px;
 }
 
 .website-scroll{
@@ -614,15 +608,11 @@ body{
 
     overflow-y:auto;
 
-    scroll-snap-type:y mandatory;
-
     display:flex;
 
     flex-direction:column;
 
-    gap:12px;
-
-    padding-right:5px;
+    gap:10px;
 }
 
 .website-scroll img{
@@ -635,34 +625,16 @@ body{
 
     border-radius:15px;
 
-    scroll-snap-align:start;
-
     transition:.3s;
 
     cursor:pointer;
 
-    box-shadow:
-    0 5px 15px rgba(0,0,0,.08);
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 .website-scroll img:hover{
 
-    transform:
-    scale(1.02);
-}
-
-/* SCROLLBAR */
-
-.website-scroll::-webkit-scrollbar{
-
-    width:6px;
-}
-
-.website-scroll::-webkit-scrollbar-thumb{
-
-    background:#cbd5e1;
-
-    border-radius:20px;
+    transform:scale(1.02);
 }
 
 /* WHY WEB DEVELOPMENT */
