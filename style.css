@@ -632,83 +632,124 @@ body{
 }
 
 
-.education-container{
+/* ==========================
+   EDUCATION NOTES
+========================== */
 
-    max-width:1000px;
-
-    margin:auto;
+.edu-notes{
 
     display:flex;
 
-    flex-direction:column;
+    justify-content:center;
 
-    gap:25px;
+    gap:30px;
+
+    flex-wrap:wrap;
 }
 
-.education-card{
+.edu-note{
 
-    background:white;
+    width:300px;
 
-    border-radius:25px;
+    padding:35px 25px;
 
-    padding:30px;
+    border-radius:20px;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    position:relative;
+
+    text-align:center;
 
     transition:.3s;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
 }
 
-.education-card:hover{
+.edu-note:hover{
 
-    transform:translateY(-8px);
-
-    box-shadow:0 15px 35px rgba(37,99,235,.15);
+    transform:
+    rotate(-2deg)
+    translateY(-8px);
 }
 
-.edu-year{
+.pin{
+
+    width:18px;
+
+    height:18px;
+
+    background:#ef4444;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    top:15px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    box-shadow:
+    0 2px 5px rgba(0,0,0,.2);
+}
+
+.edu-note h3{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+    color:#0f172a;
+
+    margin-bottom:10px;
+}
+
+.edu-note p{
+
+    color:#475569;
+
+    margin-bottom:10px;
+}
+
+.edu-note h4{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+}
+
+.edu-note span{
 
     display:inline-block;
 
-    background:#2563eb;
+    background:white;
 
-    color:white;
-
-    padding:8px 16px;
+    padding:8px 15px;
 
     border-radius:50px;
 
     font-size:14px;
 
     font-weight:600;
-
-    margin-bottom:15px;
 }
 
-.education-card h3{
+/* pastel colors */
 
-    color:#2563eb;
+.yellow-note{
 
-    margin-bottom:10px;
-
-    font-size:28px;
+    background:#fef3c7;
 }
 
-.education-card h4{
+.blue-note{
 
-    color:#334155;
-
-    margin-bottom:15px;
-
-    font-weight:500;
+    background:#dbeafe;
 }
 
-.education-card p{
+.pink-note{
 
-    color:#475569;
-
-    font-size:17px;
+    background:#fbcfe8;
 }
-
 /* ==================================
    PLAN
 ================================== */
