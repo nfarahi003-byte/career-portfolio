@@ -1606,6 +1606,29 @@ footer{
 
     margin-bottom:25px;
 }
+.career-intro{
+
+    max-width:900px;
+
+    margin:0 auto 40px;
+
+    text-align:center;
+}
+
+.career-intro h2{
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+}
+
+.career-intro p{
+
+    color:#475569;
+
+    line-height:1.9;
+}
+
 
 /* ==================================
    CURRENT SKILLS VS INDUSTRY
