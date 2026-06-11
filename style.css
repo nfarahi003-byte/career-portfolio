@@ -559,29 +559,28 @@ body{
 
     background:#fff;
 
-    padding:25px;
+    padding:20px 25px;
 
     border-radius:25px;
 
-    box-shadow:0 5px 15px rgba(0,0,0,.05);
-
-    height:auto;
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.05);
 }
 
 .career-about h2{
 
-    font-size:28px;
-
-    margin-bottom:15px;
+    font-size:24px;
 
     color:#2563eb;
+
+    margin-bottom:15px;
 }
 
 .career-about p{
 
-    font-size:16px;
+    font-size:15px;
 
-    line-height:1.8;
+    line-height:1.9;
 
     color:#475569;
 
@@ -598,46 +597,61 @@ body{
 
     border-radius:25px;
 
-    box-shadow:0 5px 15px rgba(0,0,0,.05);
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.05);
 }
 
 .website-showcase h3{
 
-    margin-bottom:15px;
-
     color:#2563eb;
+
+    margin-bottom:15px;
 }
 
 .website-scroll{
 
-    height:180px;
+    height:220px;
 
     overflow-y:auto;
+
+    scroll-snap-type:y mandatory;
 
     display:flex;
 
     flex-direction:column;
 
     gap:12px;
+
+    padding-right:5px;
 }
 
 .website-scroll img{
 
     width:100%;
 
-    border-radius:12px;
+    height:180px;
 
     object-fit:cover;
 
+    border-radius:15px;
+
+    scroll-snap-align:start;
+
     transition:.3s;
 
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    cursor:pointer;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
 }
 
 .website-scroll img:hover{
 
-    transform:scale(1.02);
+    transform:
+    scale(1.02);
 }
+
+/* SCROLLBAR */
 
 .website-scroll::-webkit-scrollbar{
 
@@ -651,25 +665,26 @@ body{
     border-radius:20px;
 }
 
-/* CHAT BUBBLE */
+/* WHY WEB DEVELOPMENT */
 
 .why-web{
 
-    background:#dcfce7;
-
     width:fit-content;
 
-    max-width:700px;
+    max-width:800px;
 
     margin:20px auto 35px;
 
-    padding:15px 20px;
+    background:#dcfce7;
+
+    padding:18px 22px;
 
     border-radius:18px;
 
     position:relative;
 
-    box-shadow:0 4px 12px rgba(0,0,0,.05);
+    box-shadow:
+    0 4px 12px rgba(0,0,0,.05);
 }
 
 .why-web::before{
@@ -695,16 +710,16 @@ body{
 
     color:#166534;
 
-    font-size:18px;
-
     margin-bottom:8px;
+
+    font-size:18px;
 }
 
 .why-web p{
 
     font-size:14px;
 
-    line-height:1.7;
+    line-height:1.8;
 
     color:#374151;
 }
@@ -717,14 +732,14 @@ body{
 
     justify-content:center;
 
-    flex-wrap:wrap;
-
     gap:20px;
+
+    flex-wrap:wrap;
 }
 
 .sticky-note{
 
-    width:250px;
+    width:260px;
 
     min-height:220px;
 
@@ -734,14 +749,17 @@ body{
 
     position:relative;
 
-    transition:.3s;
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.08);
 
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
 .sticky-note:hover{
 
-    transform:translateY(-8px) rotate(0deg);
+    transform:
+    translateY(-8px)
+    rotate(0deg);
 }
 
 .blue-note{
@@ -765,11 +783,13 @@ body{
     transform:rotate(-1deg);
 }
 
+/* PIN */
+
 .pin{
 
-    width:15px;
+    width:18px;
 
-    height:15px;
+    height:18px;
 
     background:#ef4444;
 
@@ -777,39 +797,48 @@ body{
 
     position:absolute;
 
-    top:8px;
+    top:10px;
 
     left:50%;
 
     transform:translateX(-50%);
+
+    box-shadow:
+    0 3px 8px rgba(0,0,0,.15);
 }
 
 .sticky-note h4{
 
     margin-top:15px;
 
-    margin-bottom:12px;
+    margin-bottom:15px;
+
+    color:#0f172a;
 
     font-size:18px;
 }
 
 .sticky-note ul{
 
-    padding-left:18px;
+    padding-left:20px;
 
-    line-height:1.8;
+    line-height:2;
 
-    font-size:14px;
+    color:#334155;
+
+    font-size:15px;
 }
 
 .sticky-note p{
 
-    font-size:14px;
+    color:#334155;
 
-    line-height:1.8;
+    line-height:2;
+
+    font-size:15px;
 }
 
-/* MOBILE */
+/* RESPONSIVE */
 
 @media(max-width:900px){
 
@@ -820,6 +849,11 @@ body{
 
     .website-scroll{
 
+        height:180px;
+    }
+
+    .website-scroll img{
+
         height:150px;
     }
 
@@ -827,7 +861,6 @@ body{
 
         width:100%;
     }
-
 }
 
 /* ==========================
