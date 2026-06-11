@@ -631,6 +631,136 @@ body{
     margin-bottom:15px;
 }
 
+/* ==========================
+   CAREER SHOWCASE
+========================== */
+
+.career-showcase{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+    margin-bottom:50px;
+
+    flex-wrap:wrap;
+}
+
+.career-text{
+
+    flex:1;
+}
+
+.career-text h3{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+}
+
+.career-text p{
+
+    line-height:1.8;
+}
+
+.career-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+.career-image img{
+
+    width:100%;
+
+    max-width:400px;
+
+    border-radius:20px;
+
+    transform:rotate(-4deg);
+
+    box-shadow:0 15px 25px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.career-image img:hover{
+
+    transform:rotate(0deg) scale(1.03);
+}
+
+/* ==========================
+   CHAT CHARACTER
+========================== */
+
+.career-chat-section{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-bottom:50px;
+
+    flex-wrap:wrap;
+}
+
+.career-character img{
+
+    width:180px;
+}
+
+.career-chat{
+
+    background:white;
+
+    padding:25px;
+
+    max-width:500px;
+
+    border-radius:20px;
+
+    position:relative;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.career-chat::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-15px;
+
+    top:40px;
+
+    border-top:15px solid transparent;
+
+    border-bottom:15px solid transparent;
+
+    border-right:15px solid white;
+}
+
+.career-chat h4{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+}
+
+.career-chat p{
+
+    line-height:1.7;
+}
 
 /* ==========================
    EDUCATION NOTES
