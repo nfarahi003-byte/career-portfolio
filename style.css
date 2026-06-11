@@ -540,334 +540,209 @@ body{
    CAREER EXPLORATION
 ========================== */
 
-.career-layout{
+#career-exploration{
 
-    display:grid;
-
-    grid-template-columns:40% 60%;
-
-    gap:20px;
-
-    align-items:start;
-
-    margin-bottom:20px;
+    margin-top:80px;
 }
 
-/* WHAT IS WEB DEVELOPER */
-
-.career-about{
+.career-main-card{
 
     background:#fff;
 
-    padding:20px 25px;
+    max-width:900px;
 
-    border-radius:25px;
+    margin:40px auto 25px;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    text-align:center;
 
     box-shadow:
-    0 5px 15px rgba(0,0,0,.05);
+    0 8px 25px rgba(0,0,0,.08);
 }
 
-.career-about h2{
+.career-icon{
 
-    font-size:24px;
-
-    color:#2563eb;
+    font-size:60px;
 
     margin-bottom:15px;
 }
 
-.career-about p{
+.career-main-card h2{
 
-    font-size:15px;
+    font-size:40px;
 
-    line-height:1.9;
+    color:#2563eb;
+
+    margin-bottom:10px;
+}
+
+.career-subtitle{
+
+    font-size:18px;
+
+    font-weight:600;
 
     color:#475569;
 
-    margin:0;
+    margin-bottom:20px;
 }
 
-/* ==========================
-   WEBSITE SHOWCASE
-========================== */
+.career-main-card p{
 
-.website-showcase{
+    line-height:1.8;
 
-    background:#ffffff;
-
-    padding:15px;
-
-    border-radius:25px;
-
-    box-shadow:
-    0 5px 15px rgba(0,0,0,.05);
-
-    height:320px;
-
-    overflow:hidden;
+    color:#475569;
 }
 
-.website-scroll{
-
-    height:280px;
-
-    overflow-y:auto;
+.career-tags{
 
     display:flex;
 
-    flex-direction:column;
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:25px;
+}
+
+.career-tags span{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    font-weight:600;
+}
+
+/* WHY */
+
+.why-career-box{
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+    display:flex;
 
     gap:15px;
 
-    padding-right:8px;
-}
+    align-items:flex-start;
 
-/* SCROLLBAR */
+    background:#dcfce7;
 
-.website-scroll::-webkit-scrollbar{
-
-    width:6px;
-}
-
-.website-scroll::-webkit-scrollbar-thumb{
-
-    background:#cbd5e1;
+    padding:20px;
 
     border-radius:20px;
-}
-
-.website-scroll::-webkit-scrollbar-track{
-
-    background:transparent;
-}
-
-/* IMAGES */
-
-.website-scroll img{
-
-    width:100%;
-
-    height:auto;
-
-    display:block;
-
-    object-fit:contain;
-
-    border-radius:15px;
-
-    background:#ffffff;
 
     box-shadow:
-    0 6px 18px rgba(0,0,0,.08);
-
-    transition:.35s ease;
-
-    cursor:pointer;
+    0 5px 15px rgba(0,0,0,.05);
 }
 
-.website-scroll img:hover{
+.chat-avatar{
 
-    transform:
-    scale(1.02);
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,.15);
-}
-/* WHY WEB DEVELOPMENT */
-
-.why-web{
-
-    width:fit-content;
-
-    max-width:800px;
-
-    margin:20px auto 35px;
-
-    background:#dcfce7;
-
-    padding:18px 22px;
-
-    border-radius:18px;
-
-    position:relative;
-
-    box-shadow:
-    0 4px 12px rgba(0,0,0,.05);
+    font-size:30px;
 }
 
-.why-web::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:-8px;
-
-    left:35px;
-
-    width:18px;
-
-    height:18px;
-
-    background:#dcfce7;
-
-    transform:rotate(45deg);
-}
-
-.why-web h3{
+.chat-content h3{
 
     color:#166534;
 
     margin-bottom:8px;
-
-    font-size:18px;
 }
 
-.why-web p{
-
-    font-size:14px;
+.chat-content p{
 
     line-height:1.8;
 
     color:#374151;
 }
 
-/* STICKY NOTES */
+/* CARDS */
 
-.sticky-container{
+.career-cards{
 
-    display:flex;
+    display:grid;
 
-    justify-content:center;
+    grid-template-columns:repeat(3,1fr);
 
-    gap:20px;
+    gap:25px;
 
-    flex-wrap:wrap;
+    margin-top:20px;
 }
 
-.sticky-note{
+.mini-card{
 
-    width:260px;
+    padding:25px;
 
-    min-height:220px;
-
-    padding:20px;
-
-    border-radius:18px;
-
-    position:relative;
+    border-radius:25px;
 
     box-shadow:
-    0 10px 20px rgba(0,0,0,.08);
+    0 8px 20px rgba(0,0,0,.08);
 
     transition:.3s;
 }
 
-.sticky-note:hover{
+.mini-card:hover{
 
     transform:
-    translateY(-8px)
-    rotate(0deg);
+    translateY(-8px);
 }
 
-.blue-note{
+.blue-card{
 
     background:#dbeafe;
-
-    transform:rotate(-2deg);
 }
 
-.green-note{
+.green-card{
 
     background:#dcfce7;
-
-    transform:rotate(2deg);
 }
 
-.orange-note{
+.orange-card{
 
     background:#fed7aa;
-
-    transform:rotate(-1deg);
 }
 
-/* PIN */
-
-.pin{
-
-    width:18px;
-
-    height:18px;
-
-    background:#ef4444;
-
-    border-radius:50%;
-
-    position:absolute;
-
-    top:10px;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    box-shadow:
-    0 3px 8px rgba(0,0,0,.15);
-}
-
-.sticky-note h4{
-
-    margin-top:15px;
+.mini-card h3{
 
     margin-bottom:15px;
 
     color:#0f172a;
-
-    font-size:18px;
 }
 
-.sticky-note ul{
+.mini-card ul{
 
     padding-left:20px;
 
     line-height:2;
-
-    color:#334155;
-
-    font-size:15px;
 }
 
-.sticky-note p{
+.mini-card p{
 
-    color:#334155;
-
-    line-height:2;
-
-    font-size:15px;
+    line-height:1.9;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 
 @media(max-width:900px){
 
-    .career-layout{
+    .career-cards{
 
         grid-template-columns:1fr;
     }
 
-    .website-scroll{
+    .career-main-card h2{
 
-        height:180px;
-    }
-
-    .website-scroll img{
-
-        height:150px;
-    }
-
-    .sticky-note{
-
-        width:100%;
+        font-size:30px;
     }
 }
 
