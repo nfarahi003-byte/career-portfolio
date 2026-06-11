@@ -12,6 +12,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -1137,5 +1140,26 @@
 
     </footer>
 
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+document.querySelectorAll('.swiper').forEach(swiperEl => {
+
+    new Swiper(swiperEl, {
+
+        loop:true,
+
+        pagination:{
+            el:swiperEl.querySelector('.swiper-pagination'),
+            clickable:true
+        }
+
+    });
+
+});
+
+</script>
 </body>
 </html>
