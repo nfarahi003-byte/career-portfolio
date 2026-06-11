@@ -556,14 +556,14 @@ body{
 
     background:white;
 
-    padding:25px 30px;
+    padding:25px;
 
     border-radius:25px;
 
-    box-shadow:
-    0 8px 20px rgba(0,0,0,.05);
-}
+    min-height:220px;
 
+    height:fit-content;
+}
 .career-about h2{
 
     color:#2563eb;
@@ -590,10 +590,8 @@ body{
 
     border-radius:25px;
 
-    box-shadow:
-    0 8px 20px rgba(0,0,0,.05);
+    height:220px;
 }
-
 .website-showcase h3{
 
     color:#2563eb;
