@@ -909,14 +909,12 @@ body{
    EVIDENCE OF LEARNING
 ========================== */
 
-/* ==========================
-   EVIDENCE OF LEARNING
-========================== */
-
 #evidence{
 
-    margin-top:100px;
+    margin-top:80px;
 }
+
+/* BOX */
 
 .evidence-box{
 
@@ -929,73 +927,209 @@ body{
     margin-bottom:40px;
 
     box-shadow:
-    0 10px 30px rgba(0,0,0,.08);
+    0 10px 25px rgba(0,0,0,.08);
 }
 
 .evidence-box h2{
 
-    margin-bottom:20px;
-
     color:#0f172a;
+
+    margin-bottom:15px;
 }
 
 .evidence-intro{
 
     color:#64748b;
 
+    line-height:1.8;
+
     margin-bottom:25px;
 }
 
-/* ===========================
-   ACADEMIC PROJECTS
-=========================== */
+/* ==========================
+   COURSES COMPLETED
+========================== */
 
-.courses-section{
+.course-tags{
 
-    margin-bottom:80px;
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
 }
 
-.course-grid{
+.course-tags span{
+
+    background:#eef4ff;
+
+    color:#2563eb;
+
+    padding:12px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    transition:.3s;
+}
+
+.course-tags span:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+    transform:translateY(-4px);
+}
+
+/* ==========================
+   PROJECTS
+========================== */
+
+.project-grid{
 
     display:grid;
 
     grid-template-columns:repeat(2,1fr);
 
-    gap:25px;
+    gap:30px;
 
-    margin-top:30px;
+    margin-top:25px;
 }
 
-.course-card{
+.project-card{
 
     background:white;
 
-    padding:25px;
+    border-radius:25px;
 
-    border-radius:20px;
+    overflow:hidden;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
 }
 
-.course-card h3{
+.project-card:hover{
 
-    color:#2563eb;
-
-    margin-bottom:15px;
+    transform:
+    translateY(-8px);
 }
 
-.course-card ul{
+/* SWIPER */
 
-    padding-left:20px;
+.swiper{
+
+    width:100%;
+
+    height:280px;
+
+    background:#f8fafc;
 }
 
-.course-card li{
+.swiper-slide{
 
-    margin-bottom:10px;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.swiper-slide img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:10px;
+}
+
+/* BULLETS */
+
+.swiper-pagination-bullet{
+
+    background:#2563eb !important;
+
+    opacity:.5;
+}
+
+.swiper-pagination-bullet-active{
+
+    opacity:1;
+}
+
+/* CONTENT */
+
+.project-content{
+
+    padding:22px;
+}
+
+.project-content h3{
+
+    color:#0f172a;
+
+    margin-bottom:12px;
+
+    font-size:20px;
+}
+
+.project-content p{
 
     color:#475569;
+
+    line-height:1.8;
+
+    font-size:14px;
 }
 
+/* YOUTUBE */
+
+.project-card iframe{
+
+    width:100%;
+
+    height:280px;
+
+    border:none;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:900px){
+
+    .project-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .evidence-box{
+
+        padding:25px;
+    }
+
+    .swiper{
+
+        height:220px;
+    }
+
+    .project-card iframe{
+
+        height:220px;
+    }
+
+}
 /* ==================================
    CONTACT
 ================================== */
