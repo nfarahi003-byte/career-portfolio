@@ -2610,18 +2610,23 @@ footer{
 
 .company-card img{
 
-    width:100%;
+    width:180px;
 
     height:180px;
 
-    object-fit:cover;
+    object-fit:contain;
 
-    border-radius:15px;
+    display:block;
 
-    margin-bottom:15px;
+    margin:0 auto 20px;
 
-    box-shadow:
-    0 8px 20px rgba(0,0,0,.1);
+    background:white;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
 .company-btn{
