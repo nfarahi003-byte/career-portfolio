@@ -2494,3 +2494,83 @@ footer{
         grid-column:auto;
     }
 }
+
+/* COMPANY CARD */
+
+.company-card{
+
+    display:flex;
+
+    gap:30px;
+
+    align-items:center;
+
+    background:#EAF4FF !important;
+}
+
+.company-card img{
+
+    width:350px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.company-content{
+
+    flex:1;
+}
+
+.company-content h3{
+
+    margin-bottom:15px;
+
+    color:#0f172a;
+}
+
+.company-content p{
+
+    margin-bottom:20px;
+
+    line-height:1.9;
+}
+
+.company-btn{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.company-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+}
+
+@media(max-width:900px){
+
+    .company-card{
+
+        flex-direction:column;
+    }
+
+    .company-card img{
+
+        width:100%;
+    }
+}
