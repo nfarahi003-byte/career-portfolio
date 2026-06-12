@@ -2387,11 +2387,14 @@ footer{
 
     display:grid;
 
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
 
     gap:30px;
 
     margin-top:30px;
+
+    align-items:start;
 }
 
 /* STICKY NOTE */
@@ -2402,24 +2405,89 @@ footer{
 
     padding:28px;
 
-    border-radius:25px;
+    min-height:260px;
+
+    border-radius:20px;
 
     box-shadow:
     0 12px 25px rgba(0,0,0,.08);
 
-    transition:.3s;
+    transition:.35s;
+
+    overflow:hidden;
+}
+
+/* DIFFERENT ROTATION */
+
+.reflection-card:nth-child(1){
+
+    background:#FFF4D6;
+
+    transform:rotate(-2deg);
+}
+
+.reflection-card:nth-child(2){
+
+    background:#DFF2FF;
+
+    transform:rotate(2deg);
+}
+
+.reflection-card:nth-child(3){
+
+    background:#E6F9E6;
 
     transform:rotate(-1deg);
 }
+
+.reflection-card:nth-child(4){
+
+    background:#FFE5EC;
+
+    transform:rotate(2deg);
+}
+
+.reflection-card:nth-child(5){
+
+    background:#EEE6FF;
+
+    transform:rotate(-2deg);
+}
+
+.reflection-card:nth-child(6){
+
+    background:#FFF0D9;
+
+    transform:rotate(1deg);
+}
+
+.reflection-card:nth-child(7){
+
+    background:#DDF7F3;
+
+    transform:rotate(-1deg);
+}
+
+.reflection-card:nth-child(8){
+
+    background:#FFECCF;
+
+    transform:rotate(2deg);
+}
+
+/* HOVER */
 
 .reflection-card:hover{
 
     transform:
     rotate(0deg)
-    translateY(-8px);
+    translateY(-10px);
+
+    box-shadow:
+    0 18px 35px rgba(0,0,0,.12);
 }
 
-/* TAPE EFFECT */
+/* TAPE */
 
 .reflection-card::before{
 
@@ -2427,12 +2495,12 @@ footer{
 
     position:absolute;
 
-    width:80px;
+    width:90px;
 
-    height:20px;
+    height:22px;
 
     background:
-    rgba(255,255,255,.7);
+    rgba(255,255,255,.65);
 
     top:-10px;
 
@@ -2443,54 +2511,43 @@ footer{
     rotate(-6deg);
 
     border-radius:4px;
+
+    backdrop-filter:blur(2px);
 }
 
-/* COLORS */
+/* PIN */
 
-.reflection-card:nth-child(1){
+.reflection-card::after{
 
-    background:#FFF4D6;
-}
+    content:"";
 
-.reflection-card:nth-child(2){
+    position:absolute;
 
-    background:#DFF2FF;
-}
+    width:14px;
 
-.reflection-card:nth-child(3){
+    height:14px;
 
-    background:#E6F9E6;
-}
+    background:#ef4444;
 
-.reflection-card:nth-child(4){
+    border-radius:50%;
 
-    background:#FFE5EC;
-}
+    top:12px;
 
-.reflection-card:nth-child(5){
+    right:15px;
 
-    background:#EEE6FF;
-}
-
-.reflection-card:nth-child(6){
-
-    background:#FFF0D9;
-}
-
-.reflection-card:nth-child(7){
-
-    background:#DDF7F3;
+    box-shadow:
+    0 4px 8px rgba(0,0,0,.2);
 }
 
 /* TITLE */
 
 .reflection-card h3{
 
+    font-size:20px;
+
     color:#0f172a;
 
     margin-bottom:15px;
-
-    font-size:22px;
 
     font-weight:700;
 }
@@ -2509,6 +2566,8 @@ footer{
 .reflection-card ul{
 
     padding-left:20px;
+
+    margin-top:10px;
 }
 
 .reflection-card li{
@@ -2516,6 +2575,8 @@ footer{
     margin-bottom:10px;
 
     color:#475569;
+
+    line-height:1.7;
 }
 
 /* ABOUT COMPANY */
@@ -2524,26 +2585,23 @@ footer{
 
     display:flex;
 
-    gap:25px;
-
-    align-items:center;
-
-    transform:rotate(1deg);
+    flex-direction:column;
 }
 
 .company-card img{
 
-    width:280px;
+    width:100%;
 
-    border-radius:18px;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
 
     box-shadow:
     0 8px 20px rgba(0,0,0,.1);
-}
-
-.company-content{
-
-    flex:1;
 }
 
 .company-btn{
@@ -2565,21 +2623,18 @@ footer{
     font-weight:600;
 
     transition:.3s;
+
+    width:fit-content;
 }
 
 .company-btn:hover{
 
     background:#1d4ed8;
+
+    transform:translateY(-3px);
 }
 
-/* FULL WIDTH */
-
-.full-width{
-
-    grid-column:1 / -1;
-}
-
-/* WHITE BOARD EFFECT */
+/* BOARD LOOK */
 
 .evidence-box{
 
@@ -2587,7 +2642,7 @@ footer{
 
     padding:40px;
 
-    border-radius:35px;
+    border-radius:30px;
 
     box-shadow:
     0 10px 30px rgba(0,0,0,.08);
@@ -2602,18 +2657,16 @@ footer{
         grid-template-columns:1fr;
     }
 
-    .company-card{
+    .reflection-card{
 
-        flex-direction:column;
+        min-height:auto;
+
+        transform:none !important;
     }
 
-    .company-card img{
+    .reflection-card:hover{
 
-        width:100%;
-    }
-
-    .full-width{
-
-        grid-column:auto;
+        transform:
+        translateY(-5px) !important;
     }
 }
