@@ -2359,6 +2359,8 @@ footer{
     margin-top:30px;
 
     align-items:start;
+
+    justify-items:center;
 }
 
 /* STICKY NOTE */
@@ -2366,6 +2368,10 @@ footer{
 .reflection-card{
 
     position:relative;
+
+    width:100%;
+
+    max-width:380px;
 
     padding:28px;
 
@@ -2381,7 +2387,7 @@ footer{
     overflow:hidden;
 }
 
-/* DIFFERENT ROTATION */
+/* COLORS */
 
 .reflection-card:nth-child(1){
 
@@ -2507,7 +2513,7 @@ footer{
 
 .reflection-card h3{
 
-    font-size:20px;
+    font-size:22px;
 
     color:#0f172a;
 
@@ -2543,13 +2549,62 @@ footer{
     line-height:1.7;
 }
 
-/* ABOUT COMPANY */
+/* SKILL BUTTONS */
+
+.skill-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:15px;
+}
+
+.skill-buttons span{
+
+    background:white;
+
+    color:#334155;
+
+    padding:10px 15px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.skill-buttons span:hover{
+
+    transform:
+    translateY(-3px);
+
+    background:#2563eb;
+
+    color:white;
+}
+
+/* COMPANY CARD */
 
 .company-card{
 
     display:flex;
 
     flex-direction:column;
+
+    align-items:center;
+
+    text-align:left;
+
+    max-width:450px;
 }
 
 .company-card img{
@@ -2560,17 +2615,16 @@ footer{
 
     object-fit:contain;
 
-    display:block;
-
-    margin:0 auto 20px;
-
     background:white;
 
     padding:15px;
 
     border-radius:18px;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:20px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
 }
 
 .company-btn{
@@ -2592,8 +2646,6 @@ footer{
     font-weight:600;
 
     transition:.3s;
-
-    width:fit-content;
 }
 
 .company-btn:hover{
@@ -2603,7 +2655,18 @@ footer{
     transform:translateY(-3px);
 }
 
-/* BOARD LOOK */
+/* FULL WIDTH CARD */
+
+.full-width{
+
+    grid-column:1 / -1;
+
+    max-width:900px;
+
+    width:100%;
+}
+
+/* BOARD */
 
 .evidence-box{
 
@@ -2617,6 +2680,15 @@ footer{
     0 10px 30px rgba(0,0,0,.08);
 }
 
+/* CENTER LAST ROW */
+
+.reflection-grid > .reflection-card:nth-child(5),
+.reflection-grid > .reflection-card:nth-child(6),
+.reflection-grid > .reflection-card:nth-child(7){
+
+    justify-self:center;
+}
+
 /* MOBILE */
 
 @media(max-width:900px){
@@ -2628,6 +2700,8 @@ footer{
 
     .reflection-card{
 
+        max-width:100%;
+
         min-height:auto;
 
         transform:none !important;
@@ -2638,25 +2712,12 @@ footer{
         transform:
         translateY(-5px) !important;
     }
-   /* BARIS BAWAH TENGAH */
 
-.reflection-grid{
+    .full-width{
 
-    justify-content:center;
+        max-width:100%;
+    }
 }
-
-/* CARD 5,6,7 */
-
-.reflection-card:nth-child(5),
-.reflection-card:nth-child(6),
-.reflection-card:nth-child(7){
-
-    max-width:350px;
-
-    margin:auto;
-}
-}
-
 /* ==========================
    ABOUT ME - PASTEL NOTE
 ========================== */
