@@ -2718,6 +2718,174 @@ footer{
         max-width:100%;
     }
 }
+
+/* ==========================
+   SKILL BUTTONS
+========================== */
+
+.skill-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:15px;
+}
+
+.skill-buttons span{
+
+    background:white;
+
+    color:#334155;
+
+    padding:10px 15px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.skill-buttons span:hover{
+
+    transform:translateY(-3px);
+
+    background:#2563eb;
+
+    color:white;
+}
+
+/* ==========================
+   SEE MORE SKILLS BUTTON
+========================== */
+
+.see-skills-btn{
+
+    display:inline-block;
+
+    margin-top:18px;
+
+    padding:12px 20px;
+
+    background:#8B5CF6;
+
+    color:white !important;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    box-shadow:
+    0 6px 15px rgba(139,92,246,.25);
+
+    transition:.3s;
+}
+
+.see-skills-btn:hover{
+
+    background:#7C3AED;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 20px rgba(139,92,246,.35);
+}
+
+/* ==========================
+   SKILL BUTTONS
+========================== */
+
+.skill-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:15px;
+}
+
+.skill-buttons span{
+
+    background:white;
+
+    color:#334155;
+
+    padding:10px 15px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.skill-buttons span:hover{
+
+    transform:translateY(-3px);
+
+    background:#2563eb;
+
+    color:white;
+}
+
+/* ==========================
+   SEE MORE SKILLS BUTTON
+========================== */
+
+.see-skills-btn{
+
+    display:inline-block;
+
+    margin-top:18px;
+
+    padding:12px 20px;
+
+    background:#8B5CF6;
+
+    color:white !important;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    box-shadow:
+    0 6px 15px rgba(139,92,246,.25);
+
+    transition:.3s;
+}
+
+.see-skills-btn:hover{
+
+    background:#7C3AED;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 20px rgba(139,92,246,.35);
+}
 /* ==========================
    ABOUT ME - PASTEL NOTE
 ========================== */
