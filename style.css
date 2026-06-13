@@ -2658,23 +2658,27 @@ footer{
 }
 
 /* ==========================
-   ABOUT ME REDESIGN
+   ABOUT ME
 ========================== */
 
 .about-card{
 
-    background:#ffffff;
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #fff8f8
+    );
 
-    max-width:1300px;
+    max-width:1200px;
 
     margin:auto;
 
-    padding:50px;
+    padding:35px 45px;
 
-    border-radius:35px;
+    border-radius:30px;
 
     box-shadow:
-    0 15px 35px rgba(0,0,0,.08);
+    0 10px 30px rgba(0,0,0,.08);
 
     text-align:center;
 
@@ -2683,7 +2687,7 @@ footer{
     overflow:hidden;
 }
 
-/* PASTEL DECORATION */
+/* DECORATION */
 
 .about-card::before{
 
@@ -2691,19 +2695,19 @@ footer{
 
     position:absolute;
 
-    width:180px;
+    width:120px;
 
-    height:180px;
+    height:120px;
 
     background:#FDE2E4;
 
     border-radius:50%;
 
-    top:-80px;
+    top:-40px;
 
-    left:-80px;
+    left:-40px;
 
-    opacity:.5;
+    opacity:.6;
 }
 
 .about-card::after{
@@ -2712,62 +2716,49 @@ footer{
 
     position:absolute;
 
-    width:180px;
+    width:120px;
 
-    height:180px;
+    height:120px;
 
     background:#D8F3DC;
 
     border-radius:50%;
 
-    bottom:-80px;
+    bottom:-40px;
 
-    right:-80px;
+    right:-40px;
 
-    opacity:.5;
+    opacity:.6;
 }
 
-/* GAMBAR TENGAH */
+/* IMAGE */
 
 .about-image{
 
-    display:flex;
-
-    justify-content:center;
-
-    margin-bottom:25px;
+    margin-bottom:15px;
 }
 
 .about-image img{
 
-    width:190px;
+    width:150px;
 
-    height:190px;
+    height:150px;
 
     object-fit:cover;
 
     border-radius:50%;
 
-    border:8px solid #ffffff;
+    border:6px solid white;
 
     box-shadow:
-    0 15px 30px rgba(0,0,0,.12);
-}
-
-/* CONTENT */
-
-.about-content{
-
-    max-width:1000px;
-
-    margin:auto;
+    0 8px 20px rgba(0,0,0,.1);
 }
 
 /* TITLE */
 
 .about-content h2{
 
-    font-size:52px;
+    font-size:44px;
 
     color:#0f172a;
 
@@ -2778,20 +2769,27 @@ footer{
 
 /* TEXT */
 
+.about-content{
+
+    max-width:1100px;
+
+    margin:auto;
+}
+
 .about-content p{
 
-    font-size:17px;
+    font-size:16px;
 
-    line-height:2;
+    line-height:1.9;
 
     color:#475569;
 
-    margin-bottom:18px;
+    margin-bottom:16px;
 
     text-align:left;
 }
 
-/* HIGHLIGHT NAME */
+/* NAME */
 
 .about-content strong{
 
@@ -2804,19 +2802,19 @@ footer{
 
     .about-card{
 
-        padding:30px;
+        padding:25px;
     }
 
     .about-image img{
 
-        width:140px;
+        width:120px;
 
-        height:140px;
+        height:120px;
     }
 
     .about-content h2{
 
-        font-size:36px;
+        font-size:32px;
     }
 
     .about-content p{
