@@ -2658,36 +2658,30 @@ footer{
 }
 
 /* ==========================
-   ABOUT ME
+   ABOUT ME - PASTEL NOTE
 ========================== */
 
 .about-card{
 
-    background:linear-gradient(
-        135deg,
-        #ffffff,
-        #fff8f8
-    );
+    background:#FFF9F2;
 
     max-width:1200px;
 
     margin:auto;
 
-    padding:35px 45px;
+    padding:40px;
 
     border-radius:30px;
 
     box-shadow:
-    0 10px 30px rgba(0,0,0,.08);
-
-    text-align:center;
+    0 12px 30px rgba(0,0,0,.08);
 
     position:relative;
 
     overflow:hidden;
 }
 
-/* DECORATION */
+/* TAPE */
 
 .about-card::before{
 
@@ -2697,18 +2691,23 @@ footer{
 
     width:120px;
 
-    height:120px;
+    height:28px;
 
-    background:#FDE2E4;
+    background:
+    rgba(255,255,255,.65);
 
-    border-radius:50%;
+    top:-10px;
 
-    top:-40px;
+    left:50%;
 
-    left:-40px;
+    transform:
+    translateX(-50%)
+    rotate(-4deg);
 
-    opacity:.6;
+    border-radius:6px;
 }
+
+/* PIN */
 
 .about-card::after{
 
@@ -2716,49 +2715,54 @@ footer{
 
     position:absolute;
 
-    width:120px;
+    width:16px;
 
-    height:120px;
+    height:16px;
 
-    background:#D8F3DC;
+    background:#ef4444;
 
     border-radius:50%;
 
-    bottom:-40px;
+    top:20px;
 
-    right:-40px;
+    right:25px;
 
-    opacity:.6;
+    box-shadow:
+    0 4px 8px rgba(0,0,0,.15);
 }
 
 /* IMAGE */
 
 .about-image{
 
-    margin-bottom:15px;
+    text-align:center;
+
+    margin-bottom:20px;
 }
 
 .about-image img{
 
-    width:150px;
+    width:140px;
 
-    height:150px;
+    height:140px;
 
     object-fit:cover;
 
-    border-radius:50%;
+    border-radius:20px;
 
-    border:6px solid white;
+    border:5px solid white;
 
     box-shadow:
-    0 8px 20px rgba(0,0,0,.1);
+    0 10px 20px rgba(0,0,0,.1);
 }
 
 /* TITLE */
 
 .about-content h2{
 
-    font-size:44px;
+    text-align:center;
+
+    font-size:42px;
 
     color:#0f172a;
 
@@ -2771,7 +2775,7 @@ footer{
 
 .about-content{
 
-    max-width:1100px;
+    max-width:1000px;
 
     margin:auto;
 }
@@ -2780,13 +2784,11 @@ footer{
 
     font-size:16px;
 
-    line-height:1.9;
+    line-height:2;
 
     color:#475569;
 
-    margin-bottom:16px;
-
-    text-align:left;
+    margin-bottom:18px;
 }
 
 /* NAME */
@@ -2794,6 +2796,16 @@ footer{
 .about-content strong{
 
     color:#2563eb;
+}
+
+/* HOVER */
+
+.about-card:hover{
+
+    transform:
+    translateY(-5px);
+
+    transition:.3s;
 }
 
 /* MOBILE */
@@ -2807,20 +2819,19 @@ footer{
 
     .about-image img{
 
-        width:120px;
+        width:110px;
 
-        height:120px;
+        height:110px;
     }
 
     .about-content h2{
 
-        font-size:32px;
+        font-size:30px;
     }
 
     .about-content p{
 
         font-size:15px;
-
-        text-align:center;
     }
+
 }
