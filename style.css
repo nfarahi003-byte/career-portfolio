@@ -2638,6 +2638,23 @@ footer{
         transform:
         translateY(-5px) !important;
     }
+   /* BARIS BAWAH TENGAH */
+
+.reflection-grid{
+
+    justify-content:center;
+}
+
+/* CARD 5,6,7 */
+
+.reflection-card:nth-child(5),
+.reflection-card:nth-child(6),
+.reflection-card:nth-child(7){
+
+    max-width:350px;
+
+    margin:auto;
+}
 }
 
 /* ==========================
