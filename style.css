@@ -2061,7 +2061,6 @@ footer{
     line-height:1.9;
 }
 
-
 /* ==================================
    CURRENT SKILLS VS INDUSTRY
 ================================== */
@@ -2079,8 +2078,6 @@ footer{
 
 .comparison-card{
 
-    background:white;
-
     border-radius:25px;
 
     padding:30px;
@@ -2090,26 +2087,34 @@ footer{
     position:relative;
 
     overflow:hidden;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
 }
+
+/* PASTEL COLORS */
 
 .current-card{
 
-    border:3px solid #4ade80;
+    background:#E8F8E8;
+
+    border:none;
 }
 
 .future-card{
 
-    border:3px solid #facc15;
+    background:#FFF4D6;
+
+    border:none;
 }
 
 .comparison-card:hover{
 
     transform:
-    translateY(-10px)
-    scale(1.02);
+    translateY(-8px);
 
     box-shadow:
-    0 20px 40px rgba(0,0,0,.12);
+    0 20px 35px rgba(0,0,0,.12);
 }
 
 .comparison-title{
@@ -2143,34 +2148,48 @@ footer{
     transition:.3s;
 }
 
+/* CURRENT */
+
 .current-card .comparison-tags span{
 
-    background:#dcfce7;
+    background:white;
 
     color:#166534;
 }
 
+/* FUTURE */
+
 .future-card .comparison-tags span{
 
-    background:#fef9c3;
+    background:white;
 
-    color:#854d0e;
+    color:#92400e;
 }
 
 .comparison-tags span:hover{
 
     transform:
-    translateY(-4px)
-    scale(1.05);
+    translateY(-4px);
+
+    box-shadow:
+    0 8px 15px rgba(0,0,0,.08);
 }
 
-/* READINESS */
+/* ==========================
+   CAREER READINESS
+========================== */
 
 .readiness-score{
 
     margin-top:40px;
 
     text-align:center;
+
+    background:#DFF2FF;
+
+    padding:30px;
+
+    border-radius:25px;
 }
 
 .score-circle{
@@ -2185,8 +2204,8 @@ footer{
 
     background:
     conic-gradient(
-        #2563eb 0% 80%,
-        #e5e7eb 80% 100%
+        #2563eb 0% 45%,
+        #e5e7eb 45% 100%
     );
 
     display:flex;
@@ -2232,21 +2251,11 @@ footer{
 
     margin:auto;
 
-    color:#64748b;
+    color:#475569;
 
     line-height:1.8;
 }
 
-/* MOBILE */
-
-@media(max-width:768px){
-
-.comparison-container{
-
-    grid-template-columns:1fr;
-}
-
-}
 /* ==========================
    CERTIFICATIONS
 ========================== */
@@ -2263,13 +2272,13 @@ footer{
 
 .cert-item{
 
-    background:#eff6ff;
+    background:#EEE6FF;
 
-    border-left:5px solid #2563eb;
+    border:none;
 
     padding:20px;
 
-    border-radius:15px;
+    border-radius:20px;
 
     font-weight:600;
 
@@ -2278,47 +2287,11 @@ footer{
 
 .cert-item:hover{
 
-    transform:translateY(-5px);
+    transform:
+    translateY(-5px);
 
     box-shadow:
-    0 10px 20px rgba(37,99,235,.12);
-}
-
-/* ==========================
-   TOOLS USED
-========================== */
-
-.tools-used{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:15px;
-}
-
-.tools-used span{
-
-    background:#dbeafe;
-
-    color:#1d4ed8;
-
-    padding:12px 20px;
-
-    border-radius:50px;
-
-    font-weight:600;
-
-    transition:.3s;
-}
-
-.tools-used span:hover{
-
-    background:#2563eb;
-
-    color:white;
-
-    transform:translateY(-4px);
+    0 10px 20px rgba(0,0,0,.08);
 }
 
 /* ==========================
@@ -2337,21 +2310,35 @@ footer{
 
 .roadmap-card{
 
-    background:#f8fafc;
-
-    border-radius:20px;
+    border-radius:25px;
 
     padding:25px;
 
     transition:.3s;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.06);
+}
+
+.roadmap-card:nth-child(1){
+
+    background:#DFF2FF;
+}
+
+.roadmap-card:nth-child(2){
+
+    background:#E8F8E8;
+}
+
+.roadmap-card:nth-child(3){
+
+    background:#FFF4D6;
 }
 
 .roadmap-card:hover{
 
-    transform:translateY(-8px);
-
-    box-shadow:
-    0 15px 30px rgba(37,99,235,.15);
+    transform:
+    translateY(-8px);
 }
 
 .roadmap-year{
@@ -2380,43 +2367,14 @@ footer{
     color:#0f172a;
 }
 
-.roadmap-card ul{
-
-    padding-left:20px;
-}
-
 .roadmap-card li{
 
     margin-bottom:10px;
 
     color:#475569;
 
-    line-height:1.6;
+    line-height:1.7;
 }
-
-/* ==========================
-   MOBILE
-========================== */
-
-@media(max-width:768px){
-
-.compare-row{
-
-    grid-template-columns:1fr;
-}
-
-.career-section{
-
-    padding:25px;
-}
-
-.career-section h2{
-
-    font-size:24px;
-}
-
-}
-
 /* ==========================
    PERSONAL REFLECTION
 ========================== */
